@@ -1,0 +1,26 @@
+/*-- scss:rules --*/
+
+body.quarto-dark {
+  --ros-surface: #151d2b;
+  --ros-surface-soft: #101725;
+  --ros-border: #2a3547;
+  --ros-text: #edf2f7;
+  --ros-muted: #9aa8bc;
+  --ros-accent: #60a5fa;
+  --ros-accent-soft: #17263d;
+  --ros-success: #5bd184;
+  --ros-warning: #f1c25b;
+  --ros-danger: #ff7b72;
+  --ros-info: #74b5ff;
+  --ros-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+
+  --ros-heat-0: #202b3b;
+  --ros-heat-1: #1e3a5f;
+  --ros-heat-2: #255fa4;
+  --ros-heat-3: #3b82f6;
+  --ros-heat-4: #93c5fd;
+}
+
+body.quarto-dark .ros-stat-card:hover {
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
+}

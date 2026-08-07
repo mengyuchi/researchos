@@ -1,0 +1,14 @@
+site:
+  github_owner: "mengyuchi"
+  github_repo: "researchos"
+  github_branch: "main"
+
+# The dashboard uses this timezone when deciding what "today" means.
+# Keep Asia/Shanghai if you want +08:00 research-day semantics.
+# Change to Europe/Berlin if you want German local dates.
+timezone: "Asia/Shanghai"
+
+dashboard:
+  activity_days: 365
+  recent_items: 8
+  today_task_limit: 8

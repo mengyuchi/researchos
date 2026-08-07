@@ -20,6 +20,11 @@ methods: []
 target_journal: ""
 submission_target: ""
 
+
+# Dashboard metadata
+research_progress:
+next_action: ""
+due:
 categories: []
 ---
 

@@ -20,6 +20,11 @@ datasets: []
 literature: []
 methods: []
 
+
+# Dashboard metadata
+research_progress: 10
+next_action: "Complete ResearchOS v0.2 dashboard deployment"
+due:
 categories: []
 ---
 

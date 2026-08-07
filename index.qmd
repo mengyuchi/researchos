@@ -1,38 +1,9 @@
 ---
 title: "ResearchOS"
+page-layout: full
+toc: false
+repo-actions: false
+body-classes: researchos-home
 ---
 
-# Academic Research Operating System
-
-A structured workspace for managing research projects, papers, ideas,
-literature, experiments, datasets, methods, and research logs.
-
-## Current Workspace
-
-### Projects
-
-Active and planned research projects.
-
-[Open Projects →](projects/index.qmd)
-
-### Papers
-
-Manuscripts from initial idea to publication.
-
-[Open Papers →](papers/index.qmd)
-
-### Ideas
-
-Research questions and future study opportunities.
-
-[Open Ideas →](ideas/index.qmd)
-
-### Experiments
-
-Experimental workflows and reproducibility records.
-
-[Open Experiments →](experiments/index.qmd)
-
-## Research Workflow
-
-Idea → Project → Experiment → Paper → Publication
+{{< include _generated/dashboard.md >}}

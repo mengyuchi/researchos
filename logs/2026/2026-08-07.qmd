@@ -20,6 +20,9 @@ uid: "060164f6-68ee-423c-b27f-25d57fda2b43"
 
 # In Progress
 
+- [ ] Upgrade ResearchOS dashboard
+- [ ] Review Fusion LOOCV experiment
+
 - 
 
 # Problems
@@ -44,6 +47,8 @@ uid: "060164f6-68ee-423c-b27f-25d57fda2b43"
 
 # Next Actions
 
-- [ ]
+- [ ] Complete paper-001 experimental design
+- [ ] Review Murray et al. 2019 notes
+- [ ] Update project-001 progress
 
 # Notes

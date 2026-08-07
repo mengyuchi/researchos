@@ -1,14 +1,19 @@
 project:
   type: website
   output-dir: _site
+  pre-render:
+    - python scripts/validate_metadata.py --strict
+    - python scripts/build_dashboard.py
 
 execute:
   freeze: auto
 
 website:
   title: "ResearchOS"
-
   site-url: "https://mengyuchi.github.io/researchos/"
+
+  search: true
+  page-navigation: true
 
   repo-url: "https://github.com/mengyuchi/researchos"
   repo-branch: main
@@ -16,46 +21,41 @@ website:
     - edit
     - source
     - issue
-
-  search: true
-  page-navigation: true
+  repo-link-target: "_blank"
 
   navbar:
+    pinned: true
     left:
       - href: index.qmd
         text: Dashboard
-
       - href: projects/index.qmd
         text: Projects
-
       - href: papers/index.qmd
         text: Papers
-
       - href: ideas/index.qmd
         text: Ideas
-
       - href: literature/index.qmd
         text: Literature
-
       - href: experiments/index.qmd
         text: Experiments
-
       - href: datasets/index.qmd
         text: Datasets
-
       - href: methods/index.qmd
         text: Methods
-
       - href: logs/index.qmd
         text: Log
-
       - href: about.qmd
         text: About
-
     right:
       - icon: github
-        href: https://github.com/mengyuchi/researchos
-        aria-label: GitHub
+        href: "https://github.com/mengyuchi/researchos"
+        aria-label: "ResearchOS on GitHub"
+
+  page-footer:
+    left: "ResearchOS · Academic Research Operating System"
+    right:
+      - text: "GitHub"
+        href: "https://github.com/mengyuchi/researchos"
 
 format:
   html:
@@ -65,12 +65,12 @@ format:
         - assets/scss/researchos.scss
       dark:
         - darkly
+        - assets/scss/researchos.scss
         - assets/scss/researchos-dark.scss
-
     respect-user-color-scheme: true
-
     toc: true
     code-copy: true
     code-fold: true
+    anchor-sections: true
 
 editor: visual
