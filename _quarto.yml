@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: _site
+
+execute:
+  freeze: auto
+
+website:
+  title: "ResearchOS"
+  search: true
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Dashboard
+
+      - href: projects/index.qmd
+        text: Projects
+
+      - href: papers/index.qmd
+        text: Papers
+
+      - href: ideas/index.qmd
+        text: Ideas
+
+      - href: literature/index.qmd
+        text: Literature
+
+      - href: experiments/index.qmd
+        text: Experiments
+
+      - href: datasets/index.qmd
+        text: Datasets
+
+      - href: methods/index.qmd
+        text: Methods
+
+      - href: logs/index.qmd
+        text: Log
+
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-fold: true
+
+editor: visual

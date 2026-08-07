@@ -1,0 +1,67 @@
+---
+id: project-XXX
+object_type: project
+title: "PROJECT TITLE"
+description: "One-sentence project description."
+
+status: planning
+priority: medium
+
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+
+papers: []
+ideas: []
+experiments: []
+datasets: []
+literature: []
+methods: []
+
+categories: []
+---
+
+# Overview
+
+## Research Problem
+
+## Objectives
+
+## Research Questions
+
+## Scope
+
+## Study Area
+
+## Expected Contributions
+
+# Work Packages
+
+## WP1
+
+## WP2
+
+## WP3
+
+# Data
+
+# Methods
+
+# Experiments
+
+# Papers
+
+# Key Results
+
+# Decisions
+
+# Risks and Blockers
+
+# Next Actions
+
+- [ ]
+
+# Timeline
+
+# Related ResearchOS Objects
+
+# Notes

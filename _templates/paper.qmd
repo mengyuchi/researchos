@@ -1,0 +1,104 @@
+---
+id: paper-XXX
+object_type: paper
+title: "PAPER TITLE"
+description: "One-sentence description of the manuscript."
+
+status: idea
+priority: medium
+
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+
+projects: []
+ideas: []
+experiments: []
+datasets: []
+literature: []
+methods: []
+
+target_journal: ""
+submission_target: ""
+
+categories: []
+---
+
+# Paper Overview
+
+## Working Title
+
+## Research Question
+
+## Scientific Problem
+
+## Knowledge Gap
+
+## Main Contribution
+
+## Novelty
+
+# Target Journal
+
+**Journal:**
+
+**Article type:**
+
+**Target submission date:**
+
+# Hypotheses
+
+# Data
+
+# Methods
+
+# Experiments
+
+# Results Required
+
+## Result 1
+
+## Result 2
+
+## Result 3
+
+# Figures
+
+| Figure | Purpose | Status |
+|---|---|---|
+| Fig. 1 | | planned |
+
+# Tables
+
+| Table | Purpose | Status |
+|---|---|---|
+| Table 1 | | planned |
+
+# Manuscript Structure
+
+## Introduction
+
+## Data
+
+## Methods
+
+## Results
+
+## Discussion
+
+## Conclusions
+
+# Literature Gaps
+
+# Reviewer Risks
+
+# Current Blockers
+
+# Next Actions
+
+- [ ]
+
+# Submission History
+
+# Decisions
+
+# Related ResearchOS Objects

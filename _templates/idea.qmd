@@ -1,0 +1,63 @@
+---
+id: idea-XXX
+object_type: idea
+title: "IDEA TITLE"
+description: "Short description."
+
+status: inbox
+priority: medium
+
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+
+projects: []
+papers: []
+literature: []
+
+categories: []
+---
+
+# Observation
+
+What triggered this idea?
+
+# Research Question
+
+# Hypothesis
+
+# Why It Matters
+
+# Existing Evidence
+
+# Related Literature
+
+# Required Data
+
+# Possible Method
+
+# Possible Experiment
+
+# Novelty
+
+# Feasibility
+
+## Data availability
+
+## Computational requirements
+
+## Time requirements
+
+## Risks
+
+# Decision
+
+- [ ] Keep evaluating
+- [ ] Convert to experiment
+- [ ] Convert to paper
+- [ ] Archive
+
+# Next Action
+
+- [ ]
+
+# Related ResearchOS Objects

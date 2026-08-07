@@ -1,0 +1,80 @@
+---
+id: lit-XXX
+uid: ""
+object_type: literature
+
+title: "ARTICLE TITLE"
+description: "One-sentence description."
+
+authors: ""
+year:
+publication: ""
+volume: ""
+issue: ""
+pages: ""
+article_number: ""
+doi: ""
+url: ""
+citation_key: ""
+
+literature_type: journal-article
+
+status: inbox
+priority: medium
+
+created: YYYY-MM-DD
+created_at: ""
+updated: YYYY-MM-DD
+updated_at: ""
+
+projects: []
+papers: []
+experiments: []
+methods: []
+
+categories: []
+---
+
+# Bibliographic Record
+
+# Research Problem
+
+# Research Questions
+
+# Study Area
+
+# Data
+
+# Methods
+
+# Experimental Design
+
+# Validation
+
+# Main Results
+
+# Main Conclusions
+
+# Important Figures and Tables
+
+# Strengths
+
+# Limitations
+
+# Relevance to My Research
+
+## Similarities
+
+## Differences
+
+# Methods Worth Reusing
+
+# Claims Potentially Useful for Citation
+
+# Questions Raised
+
+# Follow-up Literature
+
+# Next Action
+
+# ResearchOS Relations

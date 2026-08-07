@@ -1,0 +1,56 @@
+---
+title: "Literature"
+description: "Structured literature records, reading notes, and methodological synthesis."
+
+listing:
+  contents:
+    - "*/index.qmd"
+
+  type: table
+
+  fields:
+    - id
+    - title
+    - authors
+    - year
+    - publication
+    - status
+    - priority
+    - updated
+
+  sort:
+    - "year desc"
+    - "updated desc"
+    - "title asc"
+
+  filter-ui:
+    - title
+    - authors
+    - publication
+    - status
+    - priority
+
+  sort-ui:
+    - title
+    - year
+    - updated
+
+  page-size: 25
+
+  table-striped: true
+  table-hover: true
+
+  field-display-names:
+    id: "ID"
+    title: "Article"
+    authors: "Authors"
+    year: "Year"
+    publication: "Publication"
+    status: "Reading Status"
+    priority: "Priority"
+    updated: "Updated"
+---
+
+# Literature Library
+
+Literature records are indexed automatically from structured ResearchOS reading notes.

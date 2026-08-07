@@ -1,0 +1,107 @@
+---
+id: paper-001
+uid: "ca72f54c-76ff-4d16-a061-5f64580f4940"
+created_at: "2026-08-07T19:17:22+08:00"
+updated_at: "2026-08-07T19:17:22+08:00"
+object_type: paper
+title: "Atmospheric Correction and Validation for InSAR"
+description: "One-sentence description of the manuscript."
+
+status: idea
+priority: medium
+
+created: 2026-08-07
+updated: 2026-08-07
+
+projects: []
+ideas: []
+experiments: []
+datasets: []
+literature: []
+methods: []
+
+target_journal: ""
+submission_target: ""
+
+categories: []
+---
+
+# Paper Overview
+
+## Working Title
+
+## Research Question
+
+## Scientific Problem
+
+## Knowledge Gap
+
+## Main Contribution
+
+## Novelty
+
+# Target Journal
+
+**Journal:**
+
+**Article type:**
+
+**Target submission date:**
+
+# Hypotheses
+
+# Data
+
+# Methods
+
+# Experiments
+
+# Results Required
+
+## Result 1
+
+## Result 2
+
+## Result 3
+
+# Figures
+
+| Figure | Purpose | Status |
+|---|---|---|
+| Fig. 1 | | planned |
+
+# Tables
+
+| Table | Purpose | Status |
+|---|---|---|
+| Table 1 | | planned |
+
+# Manuscript Structure
+
+## Introduction
+
+## Data
+
+## Methods
+
+## Results
+
+## Discussion
+
+## Conclusions
+
+# Literature Gaps
+
+# Reviewer Risks
+
+# Current Blockers
+
+# Next Actions
+
+- [ ]
+
+# Submission History
+
+# Decisions
+
+# Related ResearchOS Objects

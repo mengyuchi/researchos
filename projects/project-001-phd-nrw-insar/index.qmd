@@ -1,0 +1,70 @@
+---
+id: project-001
+uid: "4016eb3f-0958-44dd-9f5b-ed070180a850"
+created_at: "2026-08-07T19:16:41+08:00"
+updated_at: "2026-08-07T19:16:41+08:00"
+object_type: project
+title: "PhD NRW InSAR Research"
+description: "One-sentence project description."
+
+status: planning
+priority: medium
+
+created: 2026-08-07
+updated: 2026-08-07
+
+papers: []
+ideas: []
+experiments: []
+datasets: []
+literature: []
+methods: []
+
+categories: []
+---
+
+# Overview
+
+## Research Problem
+
+## Objectives
+
+## Research Questions
+
+## Scope
+
+## Study Area
+
+## Expected Contributions
+
+# Work Packages
+
+## WP1
+
+## WP2
+
+## WP3
+
+# Data
+
+# Methods
+
+# Experiments
+
+# Papers
+
+# Key Results
+
+# Decisions
+
+# Risks and Blockers
+
+# Next Actions
+
+- [ ]
+
+# Timeline
+
+# Related ResearchOS Objects
+
+# Notes

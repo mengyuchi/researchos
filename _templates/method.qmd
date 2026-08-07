@@ -1,0 +1,58 @@
+---
+id: method-XXX
+object_type: method
+title: "METHOD TITLE"
+description: "Short methodological description."
+
+status: draft
+priority: medium
+
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+
+projects: []
+papers: []
+experiments: []
+datasets: []
+literature: []
+
+categories: []
+---
+
+# Purpose
+
+# Scientific Principle
+
+# Assumptions
+
+# Inputs
+
+# Outputs
+
+# Algorithm
+
+## Step 1
+
+## Step 2
+
+## Step 3
+
+# Parameters
+
+# Implementation
+
+# Validation
+
+# Advantages
+
+# Limitations
+
+# Failure Modes
+
+# References
+
+# Related Experiments
+
+# Reproducibility
+
+# Next Action

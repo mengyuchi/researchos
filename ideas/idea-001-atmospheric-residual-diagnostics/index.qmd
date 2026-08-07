@@ -1,0 +1,66 @@
+---
+id: idea-001
+uid: "691adb29-8d20-4c92-aed6-9e7a7790553a"
+created_at: "2026-08-07T19:17:53+08:00"
+updated_at: "2026-08-07T19:17:53+08:00"
+object_type: idea
+title: "Atmospheric Residual Spatial Diagnostics"
+description: "Short description."
+
+status: inbox
+priority: medium
+
+created: 2026-08-07
+updated: 2026-08-07
+
+projects: []
+papers: []
+literature: []
+
+categories: []
+---
+
+# Observation
+
+What triggered this idea?
+
+# Research Question
+
+# Hypothesis
+
+# Why It Matters
+
+# Existing Evidence
+
+# Related Literature
+
+# Required Data
+
+# Possible Method
+
+# Possible Experiment
+
+# Novelty
+
+# Feasibility
+
+## Data availability
+
+## Computational requirements
+
+## Time requirements
+
+## Risks
+
+# Decision
+
+- [ ] Keep evaluating
+- [ ] Convert to experiment
+- [ ] Convert to paper
+- [ ] Archive
+
+# Next Action
+
+- [ ]
+
+# Related ResearchOS Objects

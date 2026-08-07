@@ -1,0 +1,68 @@
+---
+id: dataset-XXX
+object_type: dataset
+title: "DATASET TITLE"
+description: "Dataset description."
+
+status: available
+priority: medium
+
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+
+projects: []
+papers: []
+experiments: []
+
+categories: []
+---
+
+# Dataset Overview
+
+# Source
+
+**Provider:**
+
+**URL:**
+
+**License:**
+
+# Spatial Coverage
+
+# Temporal Coverage
+
+# Coordinate Reference System
+
+# Resolution
+
+## Spatial
+
+## Temporal
+
+# Data Format
+
+# Variables / Attributes
+
+# Acquisition
+
+# Preprocessing
+
+# Quality Control
+
+# Version
+
+# Local Storage
+
+Do not expose sensitive absolute paths on the public website.
+
+# Derived Products
+
+# Used By
+
+# Known Limitations
+
+# Provenance
+
+# Reproducibility
+
+# Next Action

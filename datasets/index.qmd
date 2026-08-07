@@ -1,0 +1,41 @@
+---
+title: "Datasets"
+description: "Dataset provenance, processing state, versions, and research usage."
+
+listing:
+  contents:
+    - "*/index.qmd"
+
+  type: table
+
+  fields:
+    - id
+    - title
+    - status
+    - updated
+
+  sort:
+    - "updated desc"
+    - "title asc"
+
+  filter-ui:
+    - title
+    - status
+
+  sort-ui:
+    - title
+    - updated
+
+  table-striped: true
+  table-hover: true
+
+  field-display-names:
+    id: "ID"
+    title: "Dataset"
+    status: "Status"
+    updated: "Updated"
+---
+
+# Datasets
+
+Dataset records are indexed automatically from ResearchOS metadata.

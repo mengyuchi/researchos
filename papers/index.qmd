@@ -1,0 +1,47 @@
+---
+title: "Papers"
+description: "Research manuscripts from initial idea to publication."
+
+listing:
+  contents:
+    - "*/index.qmd"
+
+  type: table
+
+  fields:
+    - id
+    - title
+    - status
+    - priority
+    - target_journal
+    - updated
+
+  sort:
+    - "updated desc"
+    - "title asc"
+
+  filter-ui:
+    - title
+    - status
+    - priority
+    - target_journal
+
+  sort-ui:
+    - title
+    - updated
+
+  table-striped: true
+  table-hover: true
+
+  field-display-names:
+    id: "ID"
+    title: "Paper"
+    status: "Status"
+    priority: "Priority"
+    target_journal: "Target Journal"
+    updated: "Updated"
+---
+
+# Research Papers
+
+Manuscripts are indexed automatically from idea development through publication.

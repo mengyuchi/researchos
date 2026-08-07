@@ -1,0 +1,44 @@
+---
+title: "Methods"
+description: "Algorithms, workflows, software, and methodological knowledge."
+
+listing:
+  contents:
+    - "*/index.qmd"
+
+  type: table
+
+  fields:
+    - id
+    - title
+    - status
+    - priority
+    - updated
+
+  sort:
+    - "updated desc"
+    - "title asc"
+
+  filter-ui:
+    - title
+    - status
+    - priority
+
+  sort-ui:
+    - title
+    - updated
+
+  table-striped: true
+  table-hover: true
+
+  field-display-names:
+    id: "ID"
+    title: "Method"
+    status: "Status"
+    priority: "Priority"
+    updated: "Updated"
+---
+
+# Methods
+
+Methodological records are indexed automatically from ResearchOS.

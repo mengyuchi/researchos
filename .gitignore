@@ -1,0 +1,55 @@
+# ============================================================
+# ResearchOS Git Ignore
+# ============================================================
+
+# Quarto generated files
+/_site/
+/.quarto/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Environment / credentials
+.env
+.env.*
+*.key
+*.pem
+*.token
+credentials.*
+secrets.*
+
+# Private research data
+/private/
+/data/raw/
+/data/private/
+/literature/pdfs/
+
+# Large or temporary files
+*.tmp
+*.temp
+*.log
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Backup files
+*.backup
+*.bak
+
+**/*.quarto_ipynb

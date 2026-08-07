@@ -1,0 +1,42 @@
+---
+title: "Research Log"
+description: "Chronological research activity, decisions, problems, and next actions."
+
+listing:
+  contents: "."
+
+  type: table
+
+  fields:
+    - date
+    - title
+    - projects
+    - papers
+
+  sort:
+    - "date desc"
+
+  filter-ui:
+    - title
+    - projects
+    - papers
+
+  sort-ui:
+    - date
+    - title
+
+  page-size: 30
+
+  table-striped: true
+  table-hover: true
+
+  field-display-names:
+    date: "Date"
+    title: "Research Log"
+    projects: "Projects"
+    papers: "Papers"
+---
+
+# Research Log
+
+Research logs are indexed automatically by date.

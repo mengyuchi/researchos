@@ -1,0 +1,87 @@
+---
+id: lit-001
+uid: "370f7fb9-33f8-47f7-a701-04a4a8c46404"
+object_type: literature
+
+title: "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico"
+
+description: "Assessment of tropospheric correction approaches for InSAR."
+
+authors: "Murray, Kyle D.; Bekaert, David P. S.; Lohman, Rowena B."
+
+year: 2019
+publication: "Remote Sensing of Environment"
+volume: "232"
+article_number: "111326"
+doi: "10.1016/j.rse.2019.111326"
+citation_key: "Murray2019Tropospheric"
+
+status: read
+priority: high
+
+created: 2026-08-07
+created_at: "2026-08-07T19:34:08+08:00"
+updated: 2026-08-07
+updated_at: "2026-08-07T19:34:08+08:00"
+
+projects:
+  - project-001
+
+papers:
+  - paper-001
+
+experiments:
+  - exp-001
+
+methods: []
+
+categories:
+  - InSAR
+  - atmospheric-correction
+  - troposphere
+  - GACOS
+---
+
+# Bibliographic Record
+
+# Research Problem
+
+# Research Questions
+
+# Study Area
+
+# Data
+
+# Methods
+
+# Experimental Design
+
+# Validation
+
+# Main Results
+
+# Main Conclusions
+
+# Important Figures and Tables
+
+# Strengths
+
+# Limitations
+
+# Relevance to My Research
+
+## Similarities
+
+## Differences
+
+# Methods Worth Reusing
+
+# Claims Potentially Useful for Citation
+
+# Questions Raised
+
+# Follow-up Literature
+
+# Next Action
+
+# ResearchOS Relations
