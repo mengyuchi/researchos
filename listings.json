@@ -6,21 +6,9 @@
     ]
   },
   {
-    "listing": "/datasets/index.html",
+    "listing": "/logs/index.html",
     "items": [
-      "/datasets/dataset-001-sentinel1/index.html"
-    ]
-  },
-  {
-    "listing": "/papers/index.html",
-    "items": [
-      "/papers/paper-001-atmospheric-correction/index.html"
-    ]
-  },
-  {
-    "listing": "/ideas/index.html",
-    "items": [
-      "/ideas/idea-001-atmospheric-residual-diagnostics/index.html"
+      "/logs/2026/2026-08-07.html"
     ]
   },
   {
@@ -30,14 +18,27 @@
     ]
   },
   {
-    "listing": "/logs/index.html",
+    "listing": "/ideas/index.html",
     "items": [
-      "/logs/2026/2026-08-07.html"
+      "/ideas/idea-001-atmospheric-residual-diagnostics/index.html"
+    ]
+  },
+  {
+    "listing": "/papers/index.html",
+    "items": [
+      "/papers/paper-001-atmospheric-correction/index.html"
+    ]
+  },
+  {
+    "listing": "/datasets/index.html",
+    "items": [
+      "/datasets/dataset-001-sentinel1/index.html"
     ]
   },
   {
     "listing": "/literature/index.html",
     "items": [
+      "/literature/lit-002-mitigation-tropospheric-turbulent-delays/index.html",
       "/literature/lit-001-murray-2019/index.html"
     ]
   },
