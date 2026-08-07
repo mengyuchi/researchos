@@ -1,0 +1,50 @@
+[
+  {
+    "listing": "/papers/index.html",
+    "items": [
+      "/papers/paper-001-atmospheric-correction/index.html"
+    ]
+  },
+  {
+    "listing": "/logs/index.html",
+    "items": [
+      "/logs/2026/2026-08-07.html"
+    ]
+  },
+  {
+    "listing": "/methods/index.html",
+    "items": [
+      "/methods/method-001-fusion-atmospheric-correction/index.html"
+    ]
+  },
+  {
+    "listing": "/experiments/index.html",
+    "items": [
+      "/experiments/exp-001-fusion-loocv/index.html"
+    ]
+  },
+  {
+    "listing": "/literature/index.html",
+    "items": [
+      "/literature/lit-001-murray-2019/index.html"
+    ]
+  },
+  {
+    "listing": "/ideas/index.html",
+    "items": [
+      "/ideas/idea-001-atmospheric-residual-diagnostics/index.html"
+    ]
+  },
+  {
+    "listing": "/datasets/index.html",
+    "items": [
+      "/datasets/dataset-001-sentinel1/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/project-001-phd-nrw-insar/index.html"
+    ]
+  }
+]

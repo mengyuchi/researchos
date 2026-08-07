@@ -1,0 +1,359 @@
+[
+  {
+    "objectID": "papers/index.html",
+    "href": "papers/index.html",
+    "title": "Papers",
+    "section": "",
+    "text": "Research Papers\nManuscripts are indexed automatically from idea development through publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Paper\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nPaper\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nTarget Journal\n\n\n\nUpdated\n\n\n\n\n\n\n\n\npaper-001\n\n\nAtmospheric Correction and Validation for InSAR\n\n\nidea\n\n\nmedium\n\n\n \n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "logs/index.html",
+    "href": "logs/index.html",
+    "title": "Research Log",
+    "section": "",
+    "text": "Research Log\nResearch logs are indexed automatically by date.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Research Log\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nResearch Log\n\n\n\nProjects\n\n\n\nPapers\n\n\n\n\n\n\n\n\nAug 7, 2026\n\n\n2026-08-07\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp1",
+    "href": "projects/project-001-phd-nrw-insar/index.html#wp1",
+    "title": "PhD NRW InSAR Research",
+    "section": "WP1",
+    "text": "WP1"
+  },
+  {
+    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp2",
+    "href": "projects/project-001-phd-nrw-insar/index.html#wp2",
+    "title": "PhD NRW InSAR Research",
+    "section": "WP2",
+    "text": "WP2"
+  },
+  {
+    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp3",
+    "href": "projects/project-001-phd-nrw-insar/index.html#wp3",
+    "title": "PhD NRW InSAR Research",
+    "section": "WP3",
+    "text": "WP3"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ResearchOS",
+    "section": "",
+    "text": "A structured workspace for managing research projects, papers, ideas, literature, experiments, datasets, methods, and research logs.\n\n\n\n\nActive and planned research projects.\nOpen Projects →\n\n\n\nManuscripts from initial idea to publication.\nOpen Papers →\n\n\n\nResearch questions and future study opportunities.\nOpen Ideas →\n\n\n\nExperimental workflows and reproducibility records.\nOpen Experiments →\n\n\n\n\nIdea → Project → Experiment → Paper → Publication"
+  },
+  {
+    "objectID": "index.html#current-workspace",
+    "href": "index.html#current-workspace",
+    "title": "ResearchOS",
+    "section": "",
+    "text": "Active and planned research projects.\nOpen Projects →\n\n\n\nManuscripts from initial idea to publication.\nOpen Papers →\n\n\n\nResearch questions and future study opportunities.\nOpen Ideas →\n\n\n\nExperimental workflows and reproducibility records.\nOpen Experiments →"
+  },
+  {
+    "objectID": "index.html#research-workflow",
+    "href": "index.html#research-workflow",
+    "title": "ResearchOS",
+    "section": "",
+    "text": "Idea → Project → Experiment → Paper → Publication"
+  },
+  {
+    "objectID": "datasets/dataset-001-sentinel1/index.html#spatial",
+    "href": "datasets/dataset-001-sentinel1/index.html#spatial",
+    "title": "Sentinel-1 NRW Archive",
+    "section": "Spatial",
+    "text": "Spatial"
+  },
+  {
+    "objectID": "datasets/dataset-001-sentinel1/index.html#temporal",
+    "href": "datasets/dataset-001-sentinel1/index.html#temporal",
+    "title": "Sentinel-1 NRW Archive",
+    "section": "Temporal",
+    "text": "Temporal"
+  },
+  {
+    "objectID": "methods/index.html",
+    "href": "methods/index.html",
+    "title": "Methods",
+    "section": "",
+    "text": "Methods\nMethodological records are indexed automatically from ResearchOS.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Method\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nMethod\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nmethod-001\n\n\nFusion Atmospheric Correction\n\n\ndraft\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "",
+    "text": "What triggered this idea?"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#data-availability",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#data-availability",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Data availability",
+    "text": "Data availability"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#computational-requirements",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#computational-requirements",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Computational requirements",
+    "text": "Computational requirements"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#time-requirements",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#time-requirements",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Time requirements",
+    "text": "Time requirements"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#risks",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#risks",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Risks",
+    "text": "Risks"
+  },
+  {
+    "objectID": "literature/lit-001-murray-2019/index.html#similarities",
+    "href": "literature/lit-001-murray-2019/index.html#similarities",
+    "title": "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico",
+    "section": "Similarities",
+    "text": "Similarities"
+  },
+  {
+    "objectID": "literature/lit-001-murray-2019/index.html#differences",
+    "href": "literature/lit-001-murray-2019/index.html#differences",
+    "title": "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico",
+    "section": "Differences",
+    "text": "Differences"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#independent-variables",
+    "href": "experiments/exp-001-fusion-loocv/index.html#independent-variables",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Independent variables",
+    "text": "Independent variables"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#dependent-variables",
+    "href": "experiments/exp-001-fusion-loocv/index.html#dependent-variables",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Dependent variables",
+    "text": "Dependent variables"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#controls",
+    "href": "experiments/exp-001-fusion-loocv/index.html#controls",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Controls",
+    "text": "Controls"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#comparison-scenarios",
+    "href": "experiments/exp-001-fusion-loocv/index.html#comparison-scenarios",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Comparison scenarios",
+    "text": "Comparison scenarios"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#operating-system",
+    "href": "experiments/exp-001-fusion-loocv/index.html#operating-system",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Operating system",
+    "text": "Operating system"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#python",
+    "href": "experiments/exp-001-fusion-loocv/index.html#python",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Python",
+    "text": "Python"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#r",
+    "href": "experiments/exp-001-fusion-loocv/index.html#r",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "R",
+    "text": "R"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#software-packages",
+    "href": "experiments/exp-001-fusion-loocv/index.html#software-packages",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Software packages",
+    "text": "Software packages"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#step-1",
+    "href": "experiments/exp-001-fusion-loocv/index.html#step-1",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Step 1",
+    "text": "Step 1"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#step-2",
+    "href": "experiments/exp-001-fusion-loocv/index.html#step-2",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Step 2",
+    "text": "Step 2"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#step-3",
+    "href": "experiments/exp-001-fusion-loocv/index.html#step-3",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Step 3",
+    "text": "Step 3"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#quantitative-results",
+    "href": "experiments/exp-001-fusion-loocv/index.html#quantitative-results",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Quantitative Results",
+    "text": "Quantitative Results"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#figures",
+    "href": "experiments/exp-001-fusion-loocv/index.html#figures",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Figures",
+    "text": "Figures"
+  },
+  {
+    "objectID": "experiments/exp-001-fusion-loocv/index.html#tables",
+    "href": "experiments/exp-001-fusion-loocv/index.html#tables",
+    "title": "Fusion LOOCV Evaluation",
+    "section": "Tables",
+    "text": "Tables"
+  },
+  {
+    "objectID": "experiments/index.html",
+    "href": "experiments/index.html",
+    "title": "Experiments",
+    "section": "",
+    "text": "Experiments\nExperimental records are indexed automatically from planning through completion.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Experiment\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nExperiment\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nexp-001\n\n\nFusion LOOCV Evaluation\n\n\nplanned\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "literature/index.html",
+    "href": "literature/index.html",
+    "title": "Literature",
+    "section": "",
+    "text": "Literature Library\nLiterature records are indexed automatically from structured ResearchOS reading notes.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Article\n      \n      \n        Year\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nArticle\n\n\n\nAuthors\n\n\n\nYear\n\n\n\nPublication\n\n\n\nReading Status\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nlit-001\n\n\nTropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico\n\n\nMurray, Kyle D.; Bekaert, David P. S.; Lohman, Rowena B.\n\n\n2019\n\n\nRemote Sensing of Environment\n\n\nread\n\n\nhigh\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ideas/index.html",
+    "href": "ideas/index.html",
+    "title": "Ideas",
+    "section": "",
+    "text": "Research Ideas\nIdeas are indexed automatically from initial capture through evaluation and conversion.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Idea\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nIdea\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nidea-001\n\n\nAtmospheric Residual Spatial Diagnostics\n\n\ninbox\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "methods/method-001-fusion-atmospheric-correction/index.html#step-1",
+    "href": "methods/method-001-fusion-atmospheric-correction/index.html#step-1",
+    "title": "Fusion Atmospheric Correction",
+    "section": "Step 1",
+    "text": "Step 1"
+  },
+  {
+    "objectID": "methods/method-001-fusion-atmospheric-correction/index.html#step-2",
+    "href": "methods/method-001-fusion-atmospheric-correction/index.html#step-2",
+    "title": "Fusion Atmospheric Correction",
+    "section": "Step 2",
+    "text": "Step 2"
+  },
+  {
+    "objectID": "methods/method-001-fusion-atmospheric-correction/index.html#step-3",
+    "href": "methods/method-001-fusion-atmospheric-correction/index.html#step-3",
+    "title": "Fusion Atmospheric Correction",
+    "section": "Step 3",
+    "text": "Step 3"
+  },
+  {
+    "objectID": "datasets/index.html",
+    "href": "datasets/index.html",
+    "title": "Datasets",
+    "section": "",
+    "text": "Datasets\nDataset records are indexed automatically from ResearchOS metadata.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Dataset\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nDataset\n\n\n\nStatus\n\n\n\nUpdated\n\n\n\n\n\n\n\n\ndataset-001\n\n\nSentinel-1 NRW Archive\n\n\navailable\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Research Projects\nResearch projects are indexed automatically from the project records below.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Project\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nProject\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nproject-001\n\n\nPhD NRW InSAR Research\n\n\nplanning\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "logs/2026/2026-08-07.html",
+    "href": "logs/2026/2026-08-07.html",
+    "title": "2026-08-07",
+    "section": "",
+    "text": "Completed\n\n\n\n\n\nIn Progress\n\n\n\n\n\nProblems\n\n\n\n\n\nDecisions\n\n\n\n\n\nResults\n\n\n\n\n\nNew Ideas\n\n\n\n\n\nLiterature Read\n\n\n\n\n\nNext Actions\n\n[ ]\n\n\n\nNotes"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#result-1",
+    "href": "papers/paper-001-atmospheric-correction/index.html#result-1",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Result 1",
+    "text": "Result 1"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#result-2",
+    "href": "papers/paper-001-atmospheric-correction/index.html#result-2",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Result 2",
+    "text": "Result 2"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#result-3",
+    "href": "papers/paper-001-atmospheric-correction/index.html#result-3",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Result 3",
+    "text": "Result 3"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#introduction",
+    "href": "papers/paper-001-atmospheric-correction/index.html#introduction",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#data-1",
+    "href": "papers/paper-001-atmospheric-correction/index.html#data-1",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Data",
+    "text": "Data"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#methods-1",
+    "href": "papers/paper-001-atmospheric-correction/index.html#methods-1",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Methods",
+    "text": "Methods"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#results",
+    "href": "papers/paper-001-atmospheric-correction/index.html#results",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#discussion",
+    "href": "papers/paper-001-atmospheric-correction/index.html#discussion",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Discussion",
+    "text": "Discussion"
+  },
+  {
+    "objectID": "papers/paper-001-atmospheric-correction/index.html#conclusions",
+    "href": "papers/paper-001-atmospheric-correction/index.html#conclusions",
+    "title": "Atmospheric Correction and Validation for InSAR",
+    "section": "Conclusions",
+    "text": "Conclusions"
+  }
+]
