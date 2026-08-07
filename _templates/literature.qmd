@@ -32,6 +32,9 @@ papers: []
 experiments: []
 methods: []
 
+
+# Dashboard metadata
+next_action: ""
 categories: []
 ---
 

@@ -1,0 +1,440 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+
+$border-radius: 0.75rem;
+$border-radius-lg: 1rem;
+
+/*-- scss:rules --*/
+
+body.quarto-light {
+  --ros-surface: #ffffff;
+  --ros-surface-soft: #f7f9fc;
+  --ros-border: #e6eaf0;
+  --ros-text: #172033;
+  --ros-muted: #667085;
+  --ros-accent: #2563eb;
+  --ros-accent-soft: #eff6ff;
+  --ros-success: #16803c;
+  --ros-warning: #b7791f;
+  --ros-danger: #c9362b;
+  --ros-info: #2563eb;
+  --ros-shadow: 0 10px 30px rgba(16, 24, 40, 0.07);
+
+  --ros-heat-0: #eef1f4;
+  --ros-heat-1: #dbeafe;
+  --ros-heat-2: #93c5fd;
+  --ros-heat-3: #3b82f6;
+  --ros-heat-4: #1d4ed8;
+}
+
+.researchos-home .quarto-title-block {
+  display: none;
+}
+
+.researchos-home #quarto-content {
+  padding-top: 1.4rem;
+}
+
+.researchos-home main.content {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ros-border, rgba(127, 127, 127, 0.18));
+}
+
+.ros-dashboard {
+  color: var(--ros-text);
+}
+
+.ros-hero {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.35rem;
+  padding: 0.25rem 0 0.5rem 0;
+}
+
+.ros-eyebrow {
+  margin: 0 0 0.35rem 0;
+  color: var(--ros-accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.ros-hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.ros-hero-subtitle {
+  color: var(--ros-muted);
+  max-width: 780px;
+  margin: 0.65rem 0 0 0;
+  font-size: 1.02rem;
+}
+
+.ros-hero-date {
+  color: var(--ros-muted);
+  text-align: right;
+  white-space: nowrap;
+  padding-bottom: 0.2rem;
+}
+
+.ros-stat-grid,
+.ros-two-column,
+.ros-three-column {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.ros-stat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.ros-two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ros-three-column {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ros-card,
+.ros-stat-card {
+  background: var(--ros-surface);
+  border: 1px solid var(--ros-border);
+  border-radius: 1rem;
+  box-shadow: var(--ros-shadow);
+}
+
+.ros-card {
+  padding: 1.15rem 1.2rem;
+}
+
+.ros-stat-card {
+  display: block;
+  padding: 1rem 1.05rem;
+  text-decoration: none !important;
+  color: var(--ros-text) !important;
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+}
+
+.ros-stat-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--ros-accent) 35%, var(--ros-border));
+  box-shadow: 0 14px 34px rgba(16, 24, 40, 0.11);
+}
+
+.ros-stat-label {
+  color: var(--ros-muted);
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.ros-stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 750;
+  line-height: 1.1;
+  margin: 0.32rem 0 0.2rem;
+  letter-spacing: -0.035em;
+}
+
+.ros-stat-note {
+  color: var(--ros-muted);
+  font-size: 0.82rem;
+}
+
+.ros-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.85rem;
+}
+
+.ros-card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 720;
+}
+
+.ros-card-meta {
+  color: var(--ros-muted);
+  font-size: 0.8rem;
+}
+
+.ros-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--ros-border);
+  border-radius: 0.65rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--ros-text) !important;
+  background: var(--ros-surface-soft);
+  text-decoration: none !important;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.ros-button-primary {
+  color: white !important;
+  background: var(--ros-accent);
+  border-color: var(--ros-accent);
+}
+
+.ros-task-list,
+.ros-activity-list,
+.ros-object-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ros-task-item,
+.ros-activity-item,
+.ros-object-item {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--ros-border);
+}
+
+.ros-task-item:first-child,
+.ros-activity-item:first-child,
+.ros-object-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ros-checkbox {
+  width: 0.92rem;
+  height: 0.92rem;
+  border: 1.5px solid var(--ros-muted);
+  border-radius: 0.24rem;
+  margin-top: 0.22rem;
+  flex: 0 0 auto;
+}
+
+.ros-item-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ros-item-title {
+  color: var(--ros-text);
+  font-weight: 650;
+  text-decoration: none !important;
+}
+
+.ros-item-subtitle {
+  color: var(--ros-muted);
+  font-size: 0.78rem;
+  margin-top: 0.12rem;
+}
+
+.ros-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.18rem 0.48rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.25;
+  background: var(--ros-surface-soft);
+  color: var(--ros-muted);
+  border: 1px solid var(--ros-border);
+}
+
+.ros-badge-success {
+  color: var(--ros-success);
+}
+
+.ros-badge-warning {
+  color: var(--ros-warning);
+}
+
+.ros-badge-danger {
+  color: var(--ros-danger);
+}
+
+.ros-badge-info {
+  color: var(--ros-info);
+}
+
+.ros-progress-row {
+  margin: 0.7rem 0;
+}
+
+.ros-progress-head {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.ros-progress-label {
+  min-width: 0;
+}
+
+.ros-progress-label a {
+  color: var(--ros-text);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.ros-progress-value {
+  color: var(--ros-muted);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.ros-progress-track,
+.ros-status-track {
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--ros-surface-soft);
+  overflow: hidden;
+  border: 1px solid var(--ros-border);
+}
+
+.ros-progress-fill,
+.ros-status-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--ros-accent);
+}
+
+.ros-status-row {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.8fr) 2.5rem 1.6fr;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.35rem 0;
+}
+
+.ros-status-name {
+  color: var(--ros-muted);
+  font-size: 0.79rem;
+}
+
+.ros-status-count {
+  text-align: right;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ros-heatmap-wrap {
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+}
+
+.ros-heatmap-grid {
+  display: grid;
+  grid-template-rows: repeat(7, 11px);
+  grid-auto-flow: column;
+  grid-auto-columns: 11px;
+  gap: 3px;
+  width: max-content;
+  min-width: 100%;
+}
+
+.ros-heat-cell {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background: var(--ros-heat-0);
+}
+
+.ros-heat-cell.level-1 { background: var(--ros-heat-1); }
+.ros-heat-cell.level-2 { background: var(--ros-heat-2); }
+.ros-heat-cell.level-3 { background: var(--ros-heat-3); }
+.ros-heat-cell.level-4 { background: var(--ros-heat-4); }
+
+.ros-heat-cell.outside-range {
+  opacity: 0;
+}
+
+.ros-heat-legend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ros-muted);
+  font-size: 0.72rem;
+  margin-top: 0.55rem;
+}
+
+.ros-heat-legend .ros-heat-cell {
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.ros-muted {
+  color: var(--ros-muted);
+}
+
+.ros-empty {
+  color: var(--ros-muted);
+  font-size: 0.9rem;
+  padding: 0.35rem 0 0.25rem;
+}
+
+.ros-footer-note {
+  color: var(--ros-muted);
+  text-align: right;
+  font-size: 0.72rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 1050px) {
+  .ros-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ros-two-column,
+  .ros-three-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .ros-stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ros-hero {
+    display: block;
+  }
+
+  .ros-hero-date {
+    text-align: left;
+    margin-top: 0.8rem;
+  }
+
+  .ros-status-row {
+    grid-template-columns: 1fr 2rem;
+  }
+
+  .ros-status-track {
+    grid-column: 1 / -1;
+  }
+}

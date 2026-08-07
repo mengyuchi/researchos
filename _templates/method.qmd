@@ -16,6 +16,11 @@ experiments: []
 datasets: []
 literature: []
 
+
+# Dashboard metadata
+research_progress:
+next_action: ""
+due:
 categories: []
 ---
 

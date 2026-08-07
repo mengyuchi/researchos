@@ -19,6 +19,11 @@ ideas: []
 datasets: []
 methods: []
 
+
+# Dashboard metadata
+research_progress: 10
+next_action: "设计实验"
+due:
 categories: []
 ---
 

@@ -17,6 +17,10 @@ projects: []
 papers: []
 literature: []
 
+
+# Dashboard metadata
+next_action: ""
+due:
 categories: []
 ---
 

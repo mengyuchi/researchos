@@ -17,6 +17,11 @@ datasets: []
 literature: []
 methods: []
 
+
+# Dashboard metadata
+research_progress:
+next_action: ""
+due:
 categories: []
 ---
 

@@ -16,6 +16,11 @@ ideas: []
 datasets: []
 methods: []
 
+
+# Dashboard metadata
+research_progress:
+next_action: ""
+due:
 categories: []
 ---
 

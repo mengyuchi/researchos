@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  pre-render:
+    - python scripts/validate_metadata.py --strict
+    - python scripts/build_dashboard.py
 
 execute:
   freeze: auto
