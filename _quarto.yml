@@ -7,7 +7,18 @@ execute:
 
 website:
   title: "ResearchOS"
+
+  site-url: "https://mengyuchi.github.io/researchos/"
+
+  repo-url: "https://github.com/mengyuchi/researchos"
+  repo-branch: main
+  repo-actions:
+    - edit
+    - source
+    - issue
+
   search: true
+  page-navigation: true
 
   navbar:
     left:
@@ -41,10 +52,23 @@ website:
       - href: about.qmd
         text: About
 
+    right:
+      - icon: github
+        href: https://github.com/mengyuchi/researchos
+        aria-label: GitHub
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light:
+        - flatly
+        - assets/scss/researchos.scss
+      dark:
+        - darkly
+        - assets/scss/researchos-dark.scss
+
+    respect-user-color-scheme: true
+
     toc: true
     code-copy: true
     code-fold: true
