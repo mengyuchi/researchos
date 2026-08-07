@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -42,10 +41,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8d73e6ba46fd02af37e194931c51d79d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ae53b294726d81e00fa9f64156060a45.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-bf8e173c935027af5db6c18214745125.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ae53b294726d81e00fa9f64156060a45.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,10 +78,180 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed researchos-home quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -136,37 +309,28 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/mengyuchi/researchos"> <i class="bi bi-github" role="img" aria-label="ResearchOS on GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#academic-research-operating-system" id="toc-academic-research-operating-system" class="nav-link active" data-scroll-target="#academic-research-operating-system">Academic Research Operating System</a>
-  <ul class="collapse">
-  <li><a href="#current-workspace" id="toc-current-workspace" class="nav-link" data-scroll-target="#current-workspace">Current Workspace</a>
-  <ul class="collapse">
-  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
-  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
-  <li><a href="#ideas" id="toc-ideas" class="nav-link" data-scroll-target="#ideas">Ideas</a></li>
-  <li><a href="#experiments" id="toc-experiments" class="nav-link" data-scroll-target="#experiments">Experiments</a></li>
-  </ul></li>
-  <li><a href="#research-workflow" id="toc-research-workflow" class="nav-link" data-scroll-target="#research-workflow">Research Workflow</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -175,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -187,43 +351,355 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="academic-research-operating-system" class="level1">
-<h1>Academic Research Operating System</h1>
-<p>A structured workspace for managing research projects, papers, ideas, literature, experiments, datasets, methods, and research logs.</p>
-<section id="current-workspace" class="level2">
-<h2 class="anchored" data-anchor-id="current-workspace">Current Workspace</h2>
-<section id="projects" class="level3">
-<h3 class="anchored" data-anchor-id="projects">Projects</h3>
-<p>Active and planned research projects.</p>
-<p><a href="./projects/index.html">Open Projects →</a></p>
+<div class="ros-dashboard">
+
+<section class="ros-hero">
+  <div>
+    <p class="ros-eyebrow">Academic Research Operating System</p>
+    <h1>ResearchOS</h1>
+    <p class="ros-hero-subtitle">
+      A metadata-driven cockpit for research projects, manuscripts, experiments,
+      literature, datasets, methods, ideas, and daily research activity.
+    </p>
+  </div>
+  <div class="ros-hero-date">
+    <strong>Friday</strong><br>
+    2026-08-07
+  </div>
 </section>
-<section id="papers" class="level3">
-<h3 class="anchored" data-anchor-id="papers">Papers</h3>
-<p>Manuscripts from initial idea to publication.</p>
-<p><a href="./papers/index.html">Open Papers →</a></p>
+
+<section class="ros-stat-grid">
+<a class="ros-stat-card" href="projects/">
+  <span class="ros-stat-label">Projects</span>
+  <span class="ros-stat-value">1</span>
+  <span class="ros-stat-note">1 active / planning</span>
+</a>
+<a class="ros-stat-card" href="papers/">
+  <span class="ros-stat-label">Papers</span>
+  <span class="ros-stat-value">1</span>
+  <span class="ros-stat-note">1 in active pipeline</span>
+</a>
+<a class="ros-stat-card" href="experiments/">
+  <span class="ros-stat-label">Experiments</span>
+  <span class="ros-stat-value">1</span>
+  <span class="ros-stat-note">0 ready / running / blocked</span>
+</a>
+<a class="ros-stat-card" href="literature/">
+  <span class="ros-stat-label">Literature</span>
+  <span class="ros-stat-value">1</span>
+  <span class="ros-stat-note">1 read / synthesized / cited</span>
+</a>
 </section>
-<section id="ideas" class="level3">
-<h3 class="anchored" data-anchor-id="ideas">Ideas</h3>
-<p>Research questions and future study opportunities.</p>
-<p><a href="./ideas/index.html">Open Ideas →</a></p>
+
+<section class="ros-two-column">
+<div class="ros-card">
+  <div class="ros-card-header">
+    <div>
+      <h2 class="ros-card-title anchored">Today's Focus</h2>
+      
+    </div>
+    <a class="ros-button ros-button-primary" href="https://github.com/mengyuchi/researchos/edit/main/logs/2026/2026-08-07.qmd" target="_blank">Edit Today's Plan ↗</a>
+  </div>
+  <ul class="ros-task-list">
+    <li class="ros-task-item">
+  <span class="ros-checkbox" aria-hidden="true"></span>
+  <div class="ros-item-main">Upgrade ResearchOS dashboard</div>
+</li>
+<li class="ros-task-item">
+  <span class="ros-checkbox" aria-hidden="true"></span>
+  <div class="ros-item-main">Review Fusion LOOCV experiment</div>
+</li>
+<li class="ros-task-item">
+  <span class="ros-checkbox" aria-hidden="true"></span>
+  <div class="ros-item-main">Complete paper-001 experimental design</div>
+</li>
+<li class="ros-task-item">
+  <span class="ros-checkbox" aria-hidden="true"></span>
+  <div class="ros-item-main">Review Murray et al. 2019 notes</div>
+</li>
+<li class="ros-task-item">
+  <span class="ros-checkbox" aria-hidden="true"></span>
+  <div class="ros-item-main">Update project-001 progress</div>
+</li>
+  </ul>
+</div>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Upcoming / Blocked</h2>
+    <span class="ros-card-meta">Next 30 days</span>
+  </div>
+  <div class="ros-empty">No blocked items or deadlines within 30 days.</div>
+</div>
 </section>
-<section id="experiments" class="level3">
-<h3 class="anchored" data-anchor-id="experiments">Experiments</h3>
-<p>Experimental workflows and reproducibility records.</p>
-<p><a href="./experiments/index.html">Open Experiments →</a></p>
+
+<section>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Research Activity</h2>
+    <span class="ros-card-meta">1 active days · last 365 days</span>
+  </div>
+  <div class="ros-heatmap-wrap">
+    <div class="ros-heatmap-grid">
+      <span class="ros-heat-cell outside-range"></span><span class="ros-heat-cell outside-range"></span><span class="ros-heat-cell outside-range"></span><span class="ros-heat-cell outside-range"></span><span class="ros-heat-cell outside-range"></span><span class="ros-heat-cell level-0" title="2025-08-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-08-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-09-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-10-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-11-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2025-12-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-01-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-02-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-03-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-04-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-05-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-06-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-06: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-07: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-08: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-09: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-10: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-11: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-12: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-13: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-14: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-15: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-16: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-17: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-18: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-19: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-20: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-21: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-22: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-23: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-24: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-25: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-26: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-27: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-28: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-29: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-30: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-07-31: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-08-01: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-08-02: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-08-03: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-08-04: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-08-05: activity score 0"></span><span class="ros-heat-cell level-0" title="2026-08-06: activity score 0"></span><span class="ros-heat-cell level-4" title="2026-08-07: activity score 8"></span><span class="ros-heat-cell outside-range"></span>
+    </div>
+  </div>
+  <div class="ros-heat-legend">
+  <span>Less</span>
+  <span class="ros-heat-cell level-0"></span>
+  <span class="ros-heat-cell level-1"></span>
+  <span class="ros-heat-cell level-2"></span>
+  <span class="ros-heat-cell level-3"></span>
+  <span class="ros-heat-cell level-4"></span>
+  <span>More</span>
+</div>
+</div>
 </section>
+
+<section class="ros-three-column">
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Paper Pipeline</h2>
+    <span class="ros-card-meta">1 total</span>
+  </div>
+  <div class="ros-status-row">
+  <div class="ros-status-name">idea</div>
+  <div class="ros-status-count">1</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:100.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">analysis</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">drafting</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">internal-review</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">submitted</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">revision</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">accepted</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">published</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">archived</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div>
+</div>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Experiment Status</h2>
+    <span class="ros-card-meta">1 total</span>
+  </div>
+  <div class="ros-status-row">
+  <div class="ros-status-name">planned</div>
+  <div class="ros-status-count">1</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:100.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">ready</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">running</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">blocked</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">completed</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">failed</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">archived</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div>
+</div>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Literature Reading</h2>
+    <span class="ros-card-meta">1 total</span>
+  </div>
+  <div class="ros-status-row">
+  <div class="ros-status-name">inbox</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">reading</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">read</div>
+  <div class="ros-status-count">1</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:100.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">synthesized</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">cited</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div><div class="ros-status-row">
+  <div class="ros-status-name">archived</div>
+  <div class="ros-status-count">0</div>
+  <div class="ros-status-track"><div class="ros-status-fill" style="width:0.0%"></div></div>
+</div>
+</div>
 </section>
-<section id="research-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="research-workflow">Research Workflow</h2>
-<p>Idea → Project → Experiment → Paper → Publication</p>
+
+<section class="ros-three-column">
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Project Progress</h2>
+    <a class="ros-button" href="projects/">Open →</a>
+  </div>
+  <div class="ros-progress-row">
+  <div class="ros-progress-head">
+    <div class="ros-progress-label">
+      <a href="projects/project-001-phd-nrw-insar/">PhD NRW InSAR Research</a>
+      <div class="ros-item-subtitle">Next: Complete ResearchOS v0.2 dashboard deployment</div>
+    </div>
+    <div><span class="ros-badge ros-badge-warning">planning</span> <span class="ros-progress-value">10%</span></div>
+  </div>
+  <div class="ros-progress-track"><div class="ros-progress-fill" style="width:10.0%"></div></div>
+</div>
+</div>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Paper Progress</h2>
+    <a class="ros-button" href="papers/">Open →</a>
+  </div>
+  <div class="ros-progress-row">
+  <div class="ros-progress-head">
+    <div class="ros-progress-label">
+      <a href="papers/paper-001-atmospheric-correction/">Atmospheric Correction and Validation for InSAR</a>
+      <div class="ros-item-subtitle">Next: 搜寻创新点</div>
+    </div>
+    <div><span class="ros-badge">idea</span> <span class="ros-progress-value">10%</span></div>
+  </div>
+  <div class="ros-progress-track"><div class="ros-progress-fill" style="width:10.0%"></div></div>
+</div>
+</div>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Experiment Progress</h2>
+    <a class="ros-button" href="experiments/">Open →</a>
+  </div>
+  <div class="ros-progress-row">
+  <div class="ros-progress-head">
+    <div class="ros-progress-label">
+      <a href="experiments/exp-001-fusion-loocv/">Fusion LOOCV Evaluation</a>
+      <div class="ros-item-subtitle">Next: 设计实验</div>
+    </div>
+    <div><span class="ros-badge ros-badge-warning">planned</span> <span class="ros-progress-value">10%</span></div>
+  </div>
+  <div class="ros-progress-track"><div class="ros-progress-fill" style="width:10.0%"></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="ros-card">
+  <div class="ros-card-header">
+    <h2 class="ros-card-title anchored">Recently Updated</h2>
+    <span class="ros-card-meta">ResearchOS objects</span>
+  </div>
+  <ul class="ros-activity-list"><li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="literature/lit-001-murray-2019/">Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico</a>
+    <div class="ros-item-subtitle">lit-001 · literature · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge ros-badge-success">read</span>
+</li>
+<li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="methods/method-001-fusion-atmospheric-correction/">Fusion Atmospheric Correction</a>
+    <div class="ros-item-subtitle">method-001 · method · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge">draft</span>
+</li>
+<li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="datasets/dataset-001-sentinel1/">Sentinel-1 NRW Archive</a>
+    <div class="ros-item-subtitle">dataset-001 · dataset · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge">available</span>
+</li>
+<li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="experiments/exp-001-fusion-loocv/">Fusion LOOCV Evaluation</a>
+    <div class="ros-item-subtitle">exp-001 · experiment · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge ros-badge-warning">planned</span>
+</li>
+<li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="ideas/idea-001-atmospheric-residual-diagnostics/">Atmospheric Residual Spatial Diagnostics</a>
+    <div class="ros-item-subtitle">idea-001 · idea · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge">inbox</span>
+</li>
+<li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="papers/paper-001-atmospheric-correction/">Atmospheric Correction and Validation for InSAR</a>
+    <div class="ros-item-subtitle">paper-001 · paper · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge">idea</span>
+</li>
+<li class="ros-activity-item">
+  <div class="ros-item-main">
+    <a class="ros-item-title" href="projects/project-001-phd-nrw-insar/">PhD NRW InSAR Research</a>
+    <div class="ros-item-subtitle">project-001 · project · updated 2026-08-07</div>
+  </div>
+  <span class="ros-badge ros-badge-warning">planning</span>
+</li></ul>
+</div>
+</section>
+
+<div class="ros-footer-note">
+  Dashboard generated 2026-08-07T23:07+08:00 · timezone Asia/Shanghai
+</div>
+
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -295,7 +771,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/mengyuchi\.github\.io\/researchos\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -623,6 +1099,25 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>ResearchOS · Academic Research Operating System</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/mengyuchi/researchos">
+<p>GitHub</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
