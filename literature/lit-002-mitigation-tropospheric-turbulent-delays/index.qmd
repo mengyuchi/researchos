@@ -1,0 +1,83 @@
+---
+id: lit-002
+uid: "f7073bb7-f7a6-4d47-935e-6a12cba39347"
+object_type: literature
+
+title: "Mitigation of tropospheric turbulent delays in InSAR time series by incorporating a stochastic process"
+description: "One-sentence description."
+
+authors: ""
+year:
+publication: ""
+volume: ""
+issue: ""
+pages: ""
+article_number: ""
+doi: ""
+url: ""
+citation_key: ""
+
+literature_type: journal-article
+
+status: inbox
+priority: medium
+
+created: 2026-08-07
+created_at: "2026-08-07T23:37:45+08:00"
+updated: 2026-08-07
+updated_at: "2026-08-07T23:37:45+08:00"
+
+projects: []
+papers: []
+experiments: []
+methods: []
+
+
+# Dashboard metadata
+next_action: ""
+categories: []
+---
+
+# Bibliographic Record
+
+# Research Problem
+
+# Research Questions
+
+# Study Area
+
+# Data
+
+# Methods
+
+# Experimental Design
+
+# Validation
+
+# Main Results
+
+# Main Conclusions
+
+# Important Figures and Tables
+
+# Strengths
+
+# Limitations
+
+# Relevance to My Research
+
+## Similarities
+
+## Differences
+
+# Methods Worth Reusing
+
+# Claims Potentially Useful for Citation
+
+# Questions Raised
+
+# Follow-up Literature
+
+# Next Action
+
+# ResearchOS Relations
