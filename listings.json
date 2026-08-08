@@ -24,6 +24,20 @@
     ]
   },
   {
+    "listing": "/knowledge/literature.html",
+    "items": [
+      "/knowledge/vault/02 Literature/Papers/Test Paper.md.html"
+    ]
+  },
+  {
+    "listing": "/knowledge/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/knowledge/experiments.html",
+    "items": []
+  },
+  {
     "listing": "/papers/index.html",
     "items": [
       "/papers/paper-001-atmospheric-correction/index.html"
@@ -34,6 +48,18 @@
     "items": [
       "/datasets/dataset-001-sentinel1/index.html"
     ]
+  },
+  {
+    "listing": "/knowledge/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/knowledge/ideas.html",
+    "items": []
+  },
+  {
+    "listing": "/knowledge/methods.html",
+    "items": []
   },
   {
     "listing": "/literature/index.html",
