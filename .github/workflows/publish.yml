@@ -2,11 +2,13 @@ name: ResearchOS Publish
 
 on:
   workflow_dispatch:
+
   push:
     branches:
       - main
+
   schedule:
-    # GitHub cron is UTC.
+    # GitHub cron uses UTC.
     - cron: "15 0 * * *"
 
 permissions:
@@ -18,21 +20,23 @@ concurrency:
 
 jobs:
   build-deploy:
+
     runs-on: ubuntu-latest
 
     env:
       RESEARCHOS_TZ: "Asia/Shanghai"
 
     steps:
+
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
-      - name: Install ResearchOS Python dependency
+      - name: Install ResearchOS Python dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install pyyaml
@@ -40,9 +44,20 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Run ResearchOS checks
+      - name: Check environment
+        run: |
+          python --version
+          quarto --version
+          python -c "import yaml; print('PyYAML OK:', yaml.__version__)"
+
+      - name: Make ResearchOS scripts executable
         run: |
           chmod +x scripts/check.sh
+          chmod +x scripts/preview.sh
+          chmod +x scripts/sync-public.sh
+
+      - name: Run ResearchOS checks
+        run: |
           ./scripts/check.sh
 
       - name: Publish ResearchOS
