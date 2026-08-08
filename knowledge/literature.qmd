@@ -8,6 +8,9 @@ listing:
   contents: "vault/02 Literature/Papers"
   type: table
 
+  exclude:
+    listing_ignore: true
+
   fields:
     - title
     - authors

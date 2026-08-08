@@ -4,7 +4,6 @@ set -Eeuo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-PYTHON="${PYTHON:-python}"
 QUARTO="${QUARTO:-quarto}"
 
 COLLECTIONS=(
@@ -27,6 +26,10 @@ ok() {
   echo "  [OK] $*"
 }
 
+warn() {
+  echo "  [WARN] $*"
+}
+
 section() {
   echo
   echo "========================================"
@@ -34,36 +37,102 @@ section() {
   echo "========================================"
 }
 
+# ---------------------------------------------------------------------------
+# Resolve Python
+#
+# Priority:
+#   1. Explicit PYTHON environment variable
+#   2. Project-local .venv/bin/python
+#   3. python3 from PATH
+#   4. python from PATH
+# ---------------------------------------------------------------------------
+
+if [[ -n "${PYTHON:-}" ]]; then
+  :
+elif [[ -x "$ROOT/.venv/bin/python" ]]; then
+  PYTHON="$ROOT/.venv/bin/python"
+elif command -v python3 >/dev/null 2>&1; then
+  PYTHON="$(command -v python3)"
+elif command -v python >/dev/null 2>&1; then
+  PYTHON="$(command -v python)"
+else
+  fail "No Python executable found. Expected $ROOT/.venv/bin/python, python3, or python."
+fi
+
 section "ResearchOS full check"
-echo "Root: $ROOT"
+echo "Root:   $ROOT"
+echo "Python: $PYTHON"
+echo "Quarto: $QUARTO"
 
 section "1/8 Environment and source checks"
 
-command -v "$PYTHON" >/dev/null 2>&1 \
-  || fail "Python executable not found: $PYTHON"
+if [[ "$PYTHON" == */* ]]; then
+  [[ -x "$PYTHON" ]] \
+    || fail "Python executable not found or not executable: $PYTHON"
+else
+  command -v "$PYTHON" >/dev/null 2>&1 \
+    || fail "Python executable not found: $PYTHON"
+fi
 
 command -v "$QUARTO" >/dev/null 2>&1 \
   || fail "Quarto executable not found: $QUARTO"
 
+"$PYTHON" --version \
+  || fail "Unable to run Python: $PYTHON"
+
 "$PYTHON" -c "import yaml" >/dev/null 2>&1 \
-  || fail "PyYAML is not available in the current Python environment"
+  || fail "PyYAML is not available in the selected Python environment: $PYTHON"
 
 [[ -f "_quarto.yml" ]] || fail "_quarto.yml is missing"
 [[ -f "index.qmd" ]] || fail "index.qmd is missing"
-[[ -f "scripts/validate_metadata.py" ]] || fail "scripts/validate_metadata.py is missing"
-[[ -f "scripts/build_dashboard.py" ]] || fail "scripts/build_dashboard.py is missing"
+
+[[ -f "scripts/validate_metadata.py" ]] \
+  || fail "scripts/validate_metadata.py is missing"
+
+[[ -f "scripts/build_dashboard.py" ]] \
+  || fail "scripts/build_dashboard.py is missing"
+
+[[ -f "scripts/export_vault.py" ]] \
+  || fail "scripts/export_vault.py is missing"
+
+[[ -f "scripts/sync-public.sh" ]] \
+  || fail "scripts/sync-public.sh is missing"
+
+[[ -f "scripts/preview.sh" ]] \
+  || fail "scripts/preview.sh is missing"
 
 [[ ! -f "README_INSTALL.md" ]] \
   || fail "README_INSTALL.md is still in the project root and would be rendered as a website page"
 
+knowledge_sources=(
+  "knowledge/index.qmd"
+  "knowledge/literature.qmd"
+  "knowledge/projects.qmd"
+  "knowledge/ideas.qmd"
+  "knowledge/methods.qmd"
+  "knowledge/experiments.qmd"
+  "knowledge/publications.qmd"
+)
+
+for page in "${knowledge_sources[@]}"; do
+  [[ -f "$page" ]] || fail "Missing Knowledge source page: $page"
+done
+
+if [[ ! -d "knowledge/vault" ]]; then
+  warn "knowledge/vault does not exist yet. Run ./scripts/sync-public.sh before publishing."
+else
+  ok "knowledge/vault exists"
+fi
+
 ok "Required tools and source files are available"
 
-section "2/8 Python syntax checks"
+section "2/8 Python and shell syntax checks"
 
 python_scripts=(
   scripts/new_item.py
   scripts/validate_metadata.py
   scripts/build_dashboard.py
+  scripts/export_vault.py
 )
 
 if [[ -f "scripts/upgrade_dashboard_metadata.py" ]]; then
@@ -74,6 +143,19 @@ for script in "${python_scripts[@]}"; do
   [[ -f "$script" ]] || fail "Missing Python script: $script"
   "$PYTHON" -m py_compile "$script" \
     || fail "Python syntax check failed: $script"
+  ok "$script"
+done
+
+shell_scripts=(
+  scripts/check.sh
+  scripts/sync-public.sh
+  scripts/preview.sh
+)
+
+for script in "${shell_scripts[@]}"; do
+  [[ -f "$script" ]] || fail "Missing shell script: $script"
+  bash -n "$script" \
+    || fail "Shell syntax check failed: $script"
   ok "$script"
 done
 
@@ -296,6 +378,13 @@ top_pages=(
   "_site/literature/index.html"
   "_site/methods/index.html"
   "_site/logs/index.html"
+  "_site/knowledge/index.html"
+  "_site/knowledge/literature.html"
+  "_site/knowledge/projects.html"
+  "_site/knowledge/ideas.html"
+  "_site/knowledge/methods.html"
+  "_site/knowledge/experiments.html"
+  "_site/knowledge/publications.html"
 )
 
 for page in "${top_pages[@]}"; do
@@ -303,7 +392,7 @@ for page in "${top_pages[@]}"; do
     || fail "Missing rendered top-level page: $page"
 done
 
-ok "All top-level pages exist"
+ok "All top-level and Knowledge pages exist"
 
 object_count=0
 
@@ -386,6 +475,14 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git check-ignore -q "_generated" \
     || fail "_generated/ is not ignored by Git"
 
+  git check-ignore -q ".venv" \
+    || fail ".venv/ is not ignored by Git"
+
+  if [[ -f ".researchos-local.env" ]]; then
+    git check-ignore -q ".researchos-local.env" \
+      || fail ".researchos-local.env is not ignored by Git"
+  fi
+
   if git ls-files --error-unmatch "_site/index.html" >/dev/null 2>&1; then
     fail "_site/index.html is tracked by Git"
   fi
@@ -394,9 +491,13 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     fail "_generated/ contains Git-tracked generated files"
   fi
 
-  ok "Git root and generated-file ignore rules"
+  if git ls-files ".researchos-local.env" | grep -q .; then
+    fail ".researchos-local.env is tracked by Git"
+  fi
+
+  ok "Git root, local-environment safety, and generated-file ignore rules"
 else
-  echo "  [WARN] Not inside a Git working tree; Git hygiene checks skipped"
+  warn "Not inside a Git working tree; Git hygiene checks skipped"
 fi
 
 section "ResearchOS check PASSED"
@@ -404,4 +505,4 @@ section "ResearchOS check PASSED"
 echo "Objects checked: $object_count"
 echo "Logs checked:    $log_count"
 echo "Heatmap cells:   $heat_cells"
-echo
+echo "Python:          $PYTHON"

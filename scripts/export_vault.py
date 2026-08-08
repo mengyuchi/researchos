@@ -71,6 +71,23 @@ def export_note(path):
     return True
 
 
+def create_placeholder(directory):
+
+    placeholder = directory / "placeholder.md"
+
+    placeholder.write_text(
+        """---
+title: "Placeholder"
+draft: true
+listing_ignore: true
+---
+
+This placeholder exists only to keep an empty ResearchOS category valid for Quarto listings.
+""",
+        encoding="utf-8"
+    )
+
+
 def main():
 
     if not VAULT.exists():
@@ -78,6 +95,7 @@ def main():
             f"Vault not found: {VAULT}"
         )
 
+    # Rebuild public export directory from scratch.
     if DEST.exists():
         shutil.rmtree(DEST)
 
@@ -86,20 +104,34 @@ def main():
         exist_ok=True
     )
 
-    count = 0
+    total_count = 0
 
     for root_name in ALLOWED_ROOTS:
 
         root = VAULT / root_name
+        destination_root = DEST / root_name
 
-        if not root.exists():
-            continue
+        destination_root.mkdir(
+            parents=True,
+            exist_ok=True
+        )
 
-        for path in root.rglob("*.md"):
+        root_count = 0
 
-            if export_note(path):
-                count += 1
+        if root.exists():
 
+            for path in root.rglob("*.md"):
+
+                if export_note(path):
+                    root_count += 1
+                    total_count += 1
+
+        # If there are no public notes in this category,
+        # create a Quarto-valid placeholder.
+        if root_count == 0:
+            create_placeholder(destination_root)
+
+    # Copy explicitly public attachments.
     public_assets = (
         VAULT
         / "Attachments"
@@ -121,7 +153,7 @@ def main():
         )
 
     print()
-    print(f"Published notes: {count}")
+    print(f"Published notes: {total_count}")
     print(f"Output: {DEST}")
 
 

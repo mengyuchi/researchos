@@ -23,28 +23,44 @@ website:
   navbar:
     pinned: true
     left:
+      # ResearchOS dashboard
       - href: index.qmd
         text: Dashboard
-      - href: projects/index.qmd
+
+      # Obsidian-backed ResearchOS 2.0 sections
+      - href: knowledge/projects.qmd
         text: Projects
+
+      # Legacy manuscript pipeline retained during migration
       - href: papers/index.qmd
         text: Papers
-      - href: knowledge/index.qmd
-        text: Knowledge
-      - href: ideas/index.qmd
+
+      - href: knowledge/ideas.qmd
         text: Ideas
-      - href: literature/index.qmd
+
+      - href: knowledge/literature.qmd
         text: Literature
-      - href: experiments/index.qmd
+
+      - href: knowledge/experiments.qmd
         text: Experiments
+
+      # Legacy dataset section retained during migration
       - href: datasets/index.qmd
         text: Datasets
-      - href: methods/index.qmd
+
+      - href: knowledge/methods.qmd
         text: Methods
+
+      - href: knowledge/publications.qmd
+        text: Publications
+
+      # Legacy public research log retained during migration
       - href: logs/index.qmd
         text: Log
+
       - href: about.qmd
         text: About
+
     right:
       - icon: github
         href: "https://github.com/mengyuchi/researchos"

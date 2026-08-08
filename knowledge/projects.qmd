@@ -5,8 +5,11 @@ toc: false
 page-layout: full
 
 listing:
-  contents: "vault/03 Projects"
+  contents: "vault/04 Ideas"
   type: table
+
+  exclude:
+    listing_ignore: true
 
   fields:
     - title
