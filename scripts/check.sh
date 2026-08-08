@@ -475,13 +475,15 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git check-ignore -q "_generated" \
     || fail "_generated/ is not ignored by Git"
 
-  git check-ignore -q ".venv" \
+  # Test synthetic files instead of requiring these local-only
+  # paths to physically exist. This makes the checks work both
+  # locally and on GitHub Actions runners.
+
+  git check-ignore -q ".venv/__researchos_ignore_check__" \
     || fail ".venv/ is not ignored by Git"
 
-  if [[ -f ".researchos-local.env" ]]; then
-    git check-ignore -q ".researchos-local.env" \
-      || fail ".researchos-local.env is not ignored by Git"
-  fi
+  git check-ignore -q ".researchos-local.env" \
+    || fail ".researchos-local.env is not ignored by Git"
 
   if git ls-files --error-unmatch "_site/index.html" >/dev/null 2>&1; then
     fail "_site/index.html is tracked by Git"
@@ -489,6 +491,10 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
 
   if git ls-files "_generated/*" | grep -q .; then
     fail "_generated/ contains Git-tracked generated files"
+  fi
+
+  if git ls-files ".venv/*" | grep -q .; then
+    fail ".venv/ contains Git-tracked files"
   fi
 
   if git ls-files ".researchos-local.env" | grep -q .; then
