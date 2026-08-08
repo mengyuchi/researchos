@@ -29,6 +29,8 @@ website:
         text: Projects
       - href: papers/index.qmd
         text: Papers
+      - href: knowledge/index.qmd
+        text: Knowledge
       - href: ideas/index.qmd
         text: Ideas
       - href: literature/index.qmd

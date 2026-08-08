@@ -1,0 +1,48 @@
+---
+title: "Research Knowledge Base"
+description: "Selected public knowledge from the Academic ResearchOS."
+toc: false
+page-layout: full
+---
+
+# Research Knowledge Base
+
+This knowledge base contains selected public notes from the Academic ResearchOS.
+
+The underlying research workspace is maintained locally in Obsidian. Only notes explicitly approved for publication are exported to this website.
+
+## Knowledge Areas
+
+### [Literature](literature.qmd)
+
+Structured notes on scientific literature, including research questions, datasets, methods, experiments, results, innovations, limitations, and relevance to ongoing research.
+
+### [Projects](projects.qmd)
+
+Research projects and publication projects, including objectives, research questions, methods, milestones, current status, and planned outputs.
+
+### [Ideas](ideas.qmd)
+
+Research ideas under development, including hypotheses, possible methods, required data, related literature, and potential experiments.
+
+### [Methods](methods.qmd)
+
+Methodological notes covering InSAR, SBAS, DS-InSAR, atmospheric correction, GNSS, statistics, validation, and related analytical approaches.
+
+### [Experiments](experiments.qmd)
+
+Structured experimental records documenting objectives, hypotheses, datasets, methods, parameters, results, validation, interpretation, and reproducibility.
+
+### [Publications](publications.qmd)
+
+Research outputs and manuscripts from initial concept through analysis, writing, submission, revision, acceptance, and publication.
+
+---
+
+## ResearchOS Publishing Model
+
+The public knowledge base is generated through the following workflow:
+
+**Obsidian → Public-note selection → Quarto → Git → GitHub → GitHub Pages**
+
+Only selected material from the private ResearchOS Vault is included here.

@@ -1,0 +1,72 @@
+---
+title: "Projects"
+description: "Research projects and publication projects managed in ResearchOS."
+toc: false
+page-layout: full
+
+listing:
+  contents: "vault/03 Projects"
+  type: table
+
+  fields:
+    - title
+    - status
+    - priority
+    - start
+    - due
+    - topics
+
+  field-display-names:
+    title: "Project"
+    status: "Status"
+    priority: "Priority"
+    start: "Start"
+    due: "Target"
+    topics: "Topics"
+
+  field-types:
+    start: date
+    due: date
+
+  field-links:
+    - title
+
+  sort:
+    - "status asc"
+    - "due asc"
+    - "title asc"
+
+  sort-ui:
+    - title
+    - start
+    - due
+
+  filter-ui: true
+
+  page-size: 25
+  table-striped: true
+  table-hover: true
+---
+
+# Projects
+
+This section contains selected research and publication projects managed through ResearchOS.
+
+Project notes typically document:
+
+- objective
+- research question
+- hypothesis
+- research scope
+- datasets
+- methods
+- experiments
+- milestones
+- current status
+- next actions
+- risks
+- related literature
+- related ideas
+- planned outputs
+
+Projects are developed in the private Obsidian workspace and appear here only when explicitly released for publication.

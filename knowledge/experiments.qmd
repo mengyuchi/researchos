@@ -1,0 +1,75 @@
+---
+title: "Experiments"
+description: "Selected experimental records from ResearchOS."
+toc: false
+page-layout: full
+
+listing:
+  contents: "vault/06 Experiments"
+  type: table
+
+  fields:
+    - title
+    - experiment_id
+    - status
+    - project
+    - method
+    - dataset
+    - reproducible
+    - file-modified
+
+  field-display-names:
+    title: "Experiment"
+    experiment_id: "ID"
+    status: "Status"
+    project: "Project"
+    method: "Method"
+    dataset: "Dataset"
+    reproducible: "Reproducible"
+    file-modified: "Updated"
+
+  field-links:
+    - title
+
+  sort:
+    - "experiment_id asc"
+    - "title asc"
+
+  sort-ui:
+    - title
+    - experiment_id
+    - file-modified
+
+  filter-ui: true
+
+  page-size: 25
+  table-striped: true
+  table-hover: true
+---
+
+# Experiments
+
+This section contains selected experimental records from ResearchOS.
+
+Each experiment is documented using a reproducible structure that may include:
+
+- objective
+- hypothesis
+- input datasets
+- computational environment
+- methodology
+- parameter configuration
+- experimental procedure
+- outputs
+- quantitative results
+- validation
+- interpretation
+- encountered problems
+- reproducibility information
+- proposed follow-up experiment
+
+Experiments normally progress through:
+
+**Planned → Running → Completed**
+
+Failed experiments may also be retained when they provide useful methodological evidence or help document important research decisions.

@@ -1,0 +1,66 @@
+---
+title: "Literature"
+description: "Selected literature notes from the ResearchOS knowledge base."
+toc: false
+page-layout: full
+
+listing:
+  contents: "vault/02 Literature/Papers"
+  type: table
+
+  fields:
+    - title
+    - authors
+    - year
+    - journal
+    - status
+    - topics
+
+  field-display-names:
+    title: "Paper"
+    authors: "Authors"
+    year: "Year"
+    journal: "Journal"
+    status: "Status"
+    topics: "Topics"
+
+  field-types:
+    year: number
+
+  field-links:
+    - title
+
+  sort:
+    - "year desc"
+    - "title asc"
+
+  sort-ui:
+    - year
+    - title
+
+  filter-ui: true
+
+  page-size: 25
+  table-striped: true
+  table-hover: true
+---
+
+# Literature
+
+This section contains selected literature notes from the ResearchOS Vault.
+
+Each note may include:
+
+- research question
+- scientific background
+- datasets and study area
+- methodology
+- experimental design
+- principal results
+- methodological or scientific innovation
+- limitations
+- important figures and tables
+- relevance to current research
+- related literature
+
+Use the search field or table headings to filter and explore the literature collection.

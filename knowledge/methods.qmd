@@ -1,0 +1,72 @@
+---
+title: "Methods"
+description: "Scientific and methodological notes from ResearchOS."
+toc: false
+page-layout: full
+
+listing:
+  contents: "vault/05 Methods"
+  type: table
+
+  fields:
+    - title
+    - description
+    - topics
+    - project
+    - file-modified
+
+  field-display-names:
+    title: "Method"
+    description: "Description"
+    topics: "Topics"
+    project: "Related Project"
+    file-modified: "Updated"
+
+  field-links:
+    - title
+
+  sort:
+    - "title asc"
+
+  sort-ui:
+    - title
+    - file-modified
+
+  filter-ui: true
+
+  page-size: 25
+  table-striped: true
+  table-hover: true
+---
+
+# Methods
+
+This section documents scientific methods and analytical approaches used or evaluated within ResearchOS.
+
+Current methodological areas may include:
+
+## InSAR
+
+General InSAR processing concepts, assumptions, limitations, and implementation notes.
+
+## SBAS
+
+Small Baseline Subset processing, time-series inversion, network design, referencing, quality control, and validation.
+
+## DS-InSAR
+
+Distributed Scatterer InSAR methods, PS/DS identification, local processing, and diagnostic analysis.
+
+## Atmospheric Correction
+
+Tropospheric delay modelling, ERA5, GACOS, GNSS-supported atmospheric correction, residual modelling, and data fusion.
+
+## GNSS
+
+GNSS processing, reference systems, LOS projection, geodetic validation, and integration with InSAR observations.
+
+## Statistics
+
+Statistical validation, robust metrics, cross-validation, spatial statistics, uncertainty assessment, and experimental comparison.
+
+Method notes are intended to connect scientific theory with reproducible research practice.

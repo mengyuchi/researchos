@@ -1,0 +1,75 @@
+---
+title: "Publications"
+description: "Research publications and manuscript development tracked through ResearchOS."
+toc: false
+page-layout: full
+
+listing:
+  contents: "vault/11 Outputs/Publications"
+  type: table
+
+  fields:
+    - title
+    - status
+    - project
+    - venue
+    - target_date
+    - doi
+    - file-modified
+
+  field-display-names:
+    title: "Publication"
+    status: "Status"
+    project: "Project"
+    venue: "Journal / Venue"
+    target_date: "Target Date"
+    doi: "DOI"
+    file-modified: "Updated"
+
+  field-types:
+    target_date: date
+
+  field-links:
+    - title
+
+  sort:
+    - "target_date desc"
+    - "title asc"
+
+  sort-ui:
+    - title
+    - target_date
+    - file-modified
+
+  filter-ui: true
+
+  page-size: 25
+  table-striped: true
+  table-hover: true
+---
+
+# Publications
+
+This section tracks selected research outputs and manuscripts developed through ResearchOS.
+
+Publication records may document:
+
+- working title
+- research question
+- principal scientific contribution
+- datasets
+- methodology
+- experimental design
+- key results
+- principal figures and tables
+- target journal or conference
+- manuscript status
+- reviewer comments
+- revision history
+- next action
+
+Publication development generally follows:
+
+**Idea → Analysis → Writing → Internal Review → Submitted → Revision → Accepted → Published**
+
+Only publication records explicitly selected for public release are included on this website.

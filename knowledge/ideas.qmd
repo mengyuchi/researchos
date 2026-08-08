@@ -1,0 +1,67 @@
+---
+title: "Research Ideas"
+description: "Selected research ideas developed within ResearchOS."
+toc: false
+page-layout: full
+
+listing:
+  contents: "vault/04 Ideas"
+  type: table
+
+  fields:
+    - title
+    - status
+    - project
+    - priority
+    - topics
+    - file-modified
+
+  field-display-names:
+    title: "Idea"
+    status: "Status"
+    project: "Project"
+    priority: "Priority"
+    topics: "Topics"
+    file-modified: "Updated"
+
+  field-links:
+    - title
+
+  sort:
+    - "status asc"
+    - "title asc"
+
+  sort-ui:
+    - title
+    - file-modified
+
+  filter-ui: true
+
+  page-size: 25
+  table-striped: true
+  table-hover: true
+---
+
+# Research Ideas
+
+This section contains selected research ideas that have progressed beyond the initial private brainstorming stage.
+
+Idea notes may describe:
+
+- core scientific idea
+- motivation
+- research question
+- possible hypothesis
+- supporting evidence
+- required datasets
+- potential methodology
+- proposed experiments
+- related literature
+- possible publication pathway
+- next action
+
+Ideas normally evolve through:
+
+**Inbox → Developing → Testing → Promoted**
+
+Early-stage or unpublished research ideas remain private unless explicitly approved for publication.
