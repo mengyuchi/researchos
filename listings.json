@@ -1,15 +1,30 @@
 [
   {
-    "listing": "/experiments/index.html",
-    "items": [
-      "/experiments/exp-001-fusion-loocv/index.html"
-    ]
-  },
-  {
     "listing": "/logs/index.html",
     "items": [
       "/logs/2026/2026-08-07.html"
     ]
+  },
+  {
+    "listing": "/literature/index.html",
+    "items": [
+      "/literature/lit-002-mitigation-tropospheric-turbulent-delays/index.html",
+      "/literature/lit-001-murray-2019/index.html"
+    ]
+  },
+  {
+    "listing": "/knowledge/experiments.html",
+    "items": []
+  },
+  {
+    "listing": "/knowledge/literature.html",
+    "items": [
+      "/knowledge/vault/02 Literature/Papers/Test Paper.html"
+    ]
+  },
+  {
+    "listing": "/knowledge/methods.html",
+    "items": []
   },
   {
     "listing": "/projects/index.html",
@@ -24,27 +39,15 @@
     ]
   },
   {
-    "listing": "/knowledge/literature.html",
+    "listing": "/methods/index.html",
     "items": [
-      "/knowledge/vault/02 Literature/Papers/Test Paper.html"
+      "/methods/method-001-fusion-atmospheric-correction/index.html"
     ]
   },
   {
-    "listing": "/knowledge/projects.html",
-    "items": []
-  },
-  {
-    "listing": "/knowledge/experiments.html",
-    "items": []
-  },
-  {
-    "listing": "/knowledge/publications.html",
-    "items": []
-  },
-  {
-    "listing": "/datasets/index.html",
+    "listing": "/experiments/index.html",
     "items": [
-      "/datasets/dataset-001-sentinel1/index.html"
+      "/experiments/exp-001-fusion-loocv/index.html"
     ]
   },
   {
@@ -54,24 +57,21 @@
     ]
   },
   {
+    "listing": "/datasets/index.html",
+    "items": [
+      "/datasets/dataset-001-sentinel1/index.html"
+    ]
+  },
+  {
+    "listing": "/knowledge/projects.html",
+    "items": []
+  },
+  {
     "listing": "/knowledge/ideas.html",
     "items": []
   },
   {
-    "listing": "/knowledge/methods.html",
+    "listing": "/knowledge/publications.html",
     "items": []
-  },
-  {
-    "listing": "/literature/index.html",
-    "items": [
-      "/literature/lit-002-mitigation-tropospheric-turbulent-delays/index.html",
-      "/literature/lit-001-murray-2019/index.html"
-    ]
-  },
-  {
-    "listing": "/methods/index.html",
-    "items": [
-      "/methods/method-001-fusion-atmospheric-correction/index.html"
-    ]
   }
 ]
