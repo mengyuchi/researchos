@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "logs/index.html",
+    "href": "logs/index.html",
+    "title": "Research Log",
     "section": "",
-    "text": "About this site"
+    "text": "Research Log\nResearch logs are indexed automatically by date.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Research Log\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nResearch Log\n\n\n\nProjects\n\n\n\nPapers\n\n\n\n\n\n\n\n\nAug 7, 2026\n\n\n2026-08-07\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "methods/index.html",
-    "href": "methods/index.html",
-    "title": "Methods",
+    "objectID": "literature/index.html",
+    "href": "literature/index.html",
+    "title": "Literature",
     "section": "",
-    "text": "Methods\nMethodological records are indexed automatically from ResearchOS.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Method\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nMethod\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nmethod-001\n\n\nFusion Atmospheric Correction\n\n\ndraft\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+    "text": "Literature Library\nLiterature records are indexed automatically from structured ResearchOS reading notes.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Article\n      \n      \n        Year\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nArticle\n\n\n\nAuthors\n\n\n\nYear\n\n\n\nPublication\n\n\n\nReading Status\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nlit-002\n\n\nMitigation of tropospheric turbulent delays in InSAR time series by incorporating a stochastic process\n\n\n \n\n\n \n\n\n \n\n\ninbox\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nlit-001\n\n\nTropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico\n\n\nMurray, Kyle D.; Bekaert, David P. S.; Lohman, Rowena B.\n\n\n2019\n\n\nRemote Sensing of Environment\n\n\nread\n\n\nhigh\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "literature/lit-002-mitigation-tropospheric-turbulent-delays/index.html#similarities",
@@ -28,6 +28,83 @@
     "text": "Differences"
   },
   {
+    "objectID": "knowledge/experiments.html",
+    "href": "knowledge/experiments.html",
+    "title": "Experiments",
+    "section": "",
+    "text": "Experiments\nThis section contains selected experimental records from ResearchOS.\nEach experiment is documented using a reproducible structure that may include:\n\nobjective\nhypothesis\ninput datasets\ncomputational environment\nmethodology\nparameter configuration\nexperimental procedure\noutputs\nquantitative results\nvalidation\ninterpretation\nencountered problems\nreproducibility information\nproposed follow-up experiment\n\nExperiments normally progress through:\nPlanned → Running → Completed\nFailed experiments may also be retained when they provide useful methodological evidence or help document important research decisions.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Experiment\n      \n      \n        ID\n      \n      \n        Updated - Oldest\n      \n      \n        Updated - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nExperiment\nID\nStatus\nProject\nMethod\nDataset\nReproducible\nUpdated\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "knowledge/literature.html",
+    "href": "knowledge/literature.html",
+    "title": "Literature",
+    "section": "",
+    "text": "Literature\nThis section contains selected literature notes from the ResearchOS Vault.\nEach note may include:\n\nresearch question\nscientific background\ndatasets and study area\nmethodology\nexperimental design\nprincipal results\nmethodological or scientific innovation\nlimitations\nimportant figures and tables\nrelevance to current research\nrelated literature\n\nUse the search field or table headings to filter and explore the literature collection.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year (Low to High)\n      \n      \n        Year (High to Low)\n      \n      \n        Paper\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nPaper\n\n\n\nAuthors\n\n\n\nYear\n\n\n\nJournal\n\n\n\nStatus\n\n\n\nTopics\n\n\n\n\n\n\n\n\nTest Paper\n\n\n \n\n\n \n\n\n \n\n\nfinished\n\n\nInSAR\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "knowledge/methods.html",
+    "href": "knowledge/methods.html",
+    "title": "Methods",
+    "section": "",
+    "text": "This section documents scientific methods and analytical approaches used or evaluated within ResearchOS.\nCurrent methodological areas may include:\n\n\nGeneral InSAR processing concepts, assumptions, limitations, and implementation notes.\n\n\n\nSmall Baseline Subset processing, time-series inversion, network design, referencing, quality control, and validation.\n\n\n\nDistributed Scatterer InSAR methods, PS/DS identification, local processing, and diagnostic analysis.\n\n\n\nTropospheric delay modelling, ERA5, GACOS, GNSS-supported atmospheric correction, residual modelling, and data fusion.\n\n\n\nGNSS processing, reference systems, LOS projection, geodetic validation, and integration with InSAR observations.\n\n\n\nStatistical validation, robust metrics, cross-validation, spatial statistics, uncertainty assessment, and experimental comparison.\nMethod notes are intended to connect scientific theory with reproducible research practice."
+  },
+  {
+    "objectID": "knowledge/methods.html#insar",
+    "href": "knowledge/methods.html#insar",
+    "title": "Methods",
+    "section": "",
+    "text": "General InSAR processing concepts, assumptions, limitations, and implementation notes."
+  },
+  {
+    "objectID": "knowledge/methods.html#sbas",
+    "href": "knowledge/methods.html#sbas",
+    "title": "Methods",
+    "section": "",
+    "text": "Small Baseline Subset processing, time-series inversion, network design, referencing, quality control, and validation."
+  },
+  {
+    "objectID": "knowledge/methods.html#ds-insar",
+    "href": "knowledge/methods.html#ds-insar",
+    "title": "Methods",
+    "section": "",
+    "text": "Distributed Scatterer InSAR methods, PS/DS identification, local processing, and diagnostic analysis."
+  },
+  {
+    "objectID": "knowledge/methods.html#atmospheric-correction",
+    "href": "knowledge/methods.html#atmospheric-correction",
+    "title": "Methods",
+    "section": "",
+    "text": "Tropospheric delay modelling, ERA5, GACOS, GNSS-supported atmospheric correction, residual modelling, and data fusion."
+  },
+  {
+    "objectID": "knowledge/methods.html#gnss",
+    "href": "knowledge/methods.html#gnss",
+    "title": "Methods",
+    "section": "",
+    "text": "GNSS processing, reference systems, LOS projection, geodetic validation, and integration with InSAR observations."
+  },
+  {
+    "objectID": "knowledge/methods.html#statistics",
+    "href": "knowledge/methods.html#statistics",
+    "title": "Methods",
+    "section": "",
+    "text": "Statistical validation, robust metrics, cross-validation, spatial statistics, uncertainty assessment, and experimental comparison.\nMethod notes are intended to connect scientific theory with reproducible research practice."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Research Projects\nResearch projects are indexed automatically from the project records below.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Project\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nProject\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nproject-001\n\n\nPhD NRW InSAR Research\n\n\nplanning\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ResearchOS",
+    "section": "",
+    "text": "Academic Research Operating System\n    ResearchOS\n    \n      A metadata-driven cockpit for research projects, manuscripts, experiments,\n      literature, datasets, methods, ideas, and daily research activity.\n    \n  \n  \n    Friday\n    2026-09-04\n  \n\n\n\n\n  Projects\n  1\n  1 active / planning\n\n\n  Papers\n  1\n  1 in active pipeline\n\n\n  Experiments\n  1\n  0 ready / running / blocked\n\n\n  Literature\n  2\n  1 read / synthesized / cited\n\n\n\n\n\n  \n    \n      Today's Focus\n      No log for today; showing latest plan from 2026-08-07.\n    \n    Edit Latest Plan ↗\n  \n  \n    \n  \n  Upgrade ResearchOS dashboard\n\n\n  \n  Review Fusion LOOCV experiment\n\n\n  \n  Complete paper-001 experimental design\n\n\n  \n  Review Murray et al. 2019 notes\n\n\n  \n  Update project-001 progress\n\n  \n\n\n  \n    Upcoming / Blocked\n    Next 30 days\n  \n  No blocked items or deadlines within 30 days.\n\n\n\n\n\n  \n    Research Activity\n    1 active days · last 365 days\n  \n  \n    \n      \n    \n  \n  \n  Less\n  \n  \n  \n  \n  \n  More\n\n\n\n\n\n\n  \n    Paper Pipeline\n    1 total\n  \n  \n  idea\n  1\n  \n\n  analysis\n  0\n  \n\n  drafting\n  0\n  \n\n  internal-review\n  0\n  \n\n  submitted\n  0\n  \n\n  revision\n  0\n  \n\n  accepted\n  0\n  \n\n  published\n  0\n  \n\n  archived\n  0\n  \n\n\n\n  \n    Experiment Status\n    1 total\n  \n  \n  planned\n  1\n  \n\n  ready\n  0\n  \n\n  running\n  0\n  \n\n  blocked\n  0\n  \n\n  completed\n  0\n  \n\n  failed\n  0\n  \n\n  archived\n  0\n  \n\n\n\n  \n    Literature Reading\n    2 total\n  \n  \n  inbox\n  1\n  \n\n  reading\n  0\n  \n\n  read\n  1\n  \n\n  synthesized\n  0\n  \n\n  cited\n  0\n  \n\n  archived\n  0\n  \n\n\n\n\n\n\n  \n    Project Progress\n    Open →\n  \n  \n  \n    \n      PhD NRW InSAR Research\n      Next: Complete ResearchOS v0.2 dashboard deployment\n    \n    planning 10%\n  \n  \n\n\n\n  \n    Paper Progress\n    Open →\n  \n  \n  \n    \n      Atmospheric Correction and Validation for InSAR\n      Next: 搜寻创新点\n    \n    idea 10%\n  \n  \n\n\n\n  \n    Experiment Progress\n    Open →\n  \n  \n  \n    \n      Fusion LOOCV Evaluation\n      Next: 设计实验\n    \n    planned 10%\n  \n  \n\n\n\n\n\n\n  \n    Recently Updated\n    ResearchOS objects\n  \n  \n  \n    Mitigation of tropospheric turbulent delays in InSAR time series by incorporating a stochastic process\n    lit-002 · literature · updated 2026-08-07\n  \n  inbox\n\n\n  \n    Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico\n    lit-001 · literature · updated 2026-08-07\n  \n  read\n\n\n  \n    Fusion Atmospheric Correction\n    method-001 · method · updated 2026-08-07\n  \n  draft\n\n\n  \n    Sentinel-1 NRW Archive\n    dataset-001 · dataset · updated 2026-08-07\n  \n  available\n\n\n  \n    Fusion LOOCV Evaluation\n    exp-001 · experiment · updated 2026-08-07\n  \n  planned\n\n\n  \n    Atmospheric Residual Spatial Diagnostics\n    idea-001 · idea · updated 2026-08-07\n  \n  inbox\n\n\n  \n    Atmospheric Correction and Validation for InSAR\n    paper-001 · paper · updated 2026-08-07\n  \n  idea\n\n\n  \n    PhD NRW InSAR Research\n    project-001 · project · updated 2026-08-07\n  \n  planning\n\n\n\n\n\n  Dashboard generated 2026-09-04T12:30+08:00 · timezone Asia/Shanghai"
+  },
+  {
     "objectID": "datasets/dataset-001-sentinel1/index.html#spatial",
     "href": "datasets/dataset-001-sentinel1/index.html#spatial",
     "title": "Sentinel-1 NRW Archive",
@@ -42,11 +119,11 @@
     "text": "Temporal"
   },
   {
-    "objectID": "logs/2026/2026-08-07.html",
-    "href": "logs/2026/2026-08-07.html",
-    "title": "2026-08-07",
+    "objectID": "ideas/index.html",
+    "href": "ideas/index.html",
+    "title": "Ideas",
     "section": "",
-    "text": "Completed\n\n\n\n\n\nIn Progress\n\nUpgrade ResearchOS dashboard\nReview Fusion LOOCV experiment\n\n\n\n\nProblems\n\n\n\n\n\nDecisions\n\n\n\n\n\nResults\n\n\n\n\n\nNew Ideas\n\n\n\n\n\nLiterature Read\n\n\n\n\n\nNext Actions\n\nComplete paper-001 experimental design\nReview Murray et al. 2019 notes\nUpdate project-001 progress\n\n\n\nNotes"
+    "text": "Research Ideas\nIdeas are indexed automatically from initial capture through evaluation and conversion.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Idea\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nIdea\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nidea-001\n\n\nAtmospheric Residual Spatial Diagnostics\n\n\ninbox\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "papers/paper-001-atmospheric-correction/index.html#result-1",
@@ -112,123 +189,11 @@
     "text": "Conclusions"
   },
   {
-    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp1",
-    "href": "projects/project-001-phd-nrw-insar/index.html#wp1",
-    "title": "PhD NRW InSAR Research",
-    "section": "WP1",
-    "text": "WP1"
-  },
-  {
-    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp2",
-    "href": "projects/project-001-phd-nrw-insar/index.html#wp2",
-    "title": "PhD NRW InSAR Research",
-    "section": "WP2",
-    "text": "WP2"
-  },
-  {
-    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp3",
-    "href": "projects/project-001-phd-nrw-insar/index.html#wp3",
-    "title": "PhD NRW InSAR Research",
-    "section": "WP3",
-    "text": "WP3"
-  },
-  {
-    "objectID": "knowledge/ideas.html",
-    "href": "knowledge/ideas.html",
-    "title": "Research Ideas",
+    "objectID": "methods/index.html",
+    "href": "methods/index.html",
+    "title": "Methods",
     "section": "",
-    "text": "Research Ideas\nThis section contains selected research ideas that have progressed beyond the initial private brainstorming stage.\nIdea notes may describe:\n\ncore scientific idea\nmotivation\nresearch question\npossible hypothesis\nsupporting evidence\nrequired datasets\npotential methodology\nproposed experiments\nrelated literature\npossible publication pathway\nnext action\n\nIdeas normally evolve through:\nInbox → Developing → Testing → Promoted\nEarly-stage or unpublished research ideas remain private unless explicitly approved for publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Idea\n      \n      \n        Updated - Oldest\n      \n      \n        Updated - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nIdea\nStatus\nProject\nPriority\nTopics\nUpdated\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "knowledge/projects.html",
-    "href": "knowledge/projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Projects\nThis section contains selected research and publication projects managed through ResearchOS.\nProject notes typically document:\n\nobjective\nresearch question\nhypothesis\nresearch scope\ndatasets\nmethods\nexperiments\nmilestones\ncurrent status\nnext actions\nrisks\nrelated literature\nrelated ideas\nplanned outputs\n\nProjects are developed in the private Obsidian workspace and appear here only when explicitly released for publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Project\n      \n      \n        Start - Oldest\n      \n      \n        Start - Newest\n      \n      \n        Target - Oldest\n      \n      \n        Target - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nProject\nStatus\nPriority\nStart\nTarget\nTopics\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "knowledge/publications.html",
-    "href": "knowledge/publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Publications\nThis section tracks selected research outputs and manuscripts developed through ResearchOS.\nPublication records may document:\n\nworking title\nresearch question\nprincipal scientific contribution\ndatasets\nmethodology\nexperimental design\nkey results\nprincipal figures and tables\ntarget journal or conference\nmanuscript status\nreviewer comments\nrevision history\nnext action\n\nPublication development generally follows:\nIdea → Analysis → Writing → Internal Review → Submitted → Revision → Accepted → Published\nOnly publication records explicitly selected for public release are included on this website.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Publication\n      \n      \n        Target Date - Oldest\n      \n      \n        Target Date - Newest\n      \n      \n        Updated - Oldest\n      \n      \n        Updated - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nPublication\nStatus\nProject\nJournal / Venue\nTarget Date\nDOI\nUpdated\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "knowledge/index.html",
-    "href": "knowledge/index.html",
-    "title": "Research Knowledge Base",
-    "section": "",
-    "text": "This knowledge base contains selected public notes from the Academic ResearchOS.\nThe underlying research workspace is maintained locally in Obsidian. Only notes explicitly approved for publication are exported to this website.\n\n\n\n\nStructured notes on scientific literature, including research questions, datasets, methods, experiments, results, innovations, limitations, and relevance to ongoing research.\n\n\n\nResearch projects and publication projects, including objectives, research questions, methods, milestones, current status, and planned outputs.\n\n\n\nResearch ideas under development, including hypotheses, possible methods, required data, related literature, and potential experiments.\n\n\n\nMethodological notes covering InSAR, SBAS, DS-InSAR, atmospheric correction, GNSS, statistics, validation, and related analytical approaches.\n\n\n\nStructured experimental records documenting objectives, hypotheses, datasets, methods, parameters, results, validation, interpretation, and reproducibility.\n\n\n\nResearch outputs and manuscripts from initial concept through analysis, writing, submission, revision, acceptance, and publication.\n\n\n\n\n\nThe public knowledge base is generated through the following workflow:\nObsidian → Public-note selection → Quarto → Git → GitHub → GitHub Pages\nOnly selected material from the private ResearchOS Vault is included here."
-  },
-  {
-    "objectID": "knowledge/index.html#knowledge-areas",
-    "href": "knowledge/index.html#knowledge-areas",
-    "title": "Research Knowledge Base",
-    "section": "",
-    "text": "Structured notes on scientific literature, including research questions, datasets, methods, experiments, results, innovations, limitations, and relevance to ongoing research.\n\n\n\nResearch projects and publication projects, including objectives, research questions, methods, milestones, current status, and planned outputs.\n\n\n\nResearch ideas under development, including hypotheses, possible methods, required data, related literature, and potential experiments.\n\n\n\nMethodological notes covering InSAR, SBAS, DS-InSAR, atmospheric correction, GNSS, statistics, validation, and related analytical approaches.\n\n\n\nStructured experimental records documenting objectives, hypotheses, datasets, methods, parameters, results, validation, interpretation, and reproducibility.\n\n\n\nResearch outputs and manuscripts from initial concept through analysis, writing, submission, revision, acceptance, and publication."
-  },
-  {
-    "objectID": "knowledge/index.html#researchos-publishing-model",
-    "href": "knowledge/index.html#researchos-publishing-model",
-    "title": "Research Knowledge Base",
-    "section": "",
-    "text": "The public knowledge base is generated through the following workflow:\nObsidian → Public-note selection → Quarto → Git → GitHub → GitHub Pages\nOnly selected material from the private ResearchOS Vault is included here."
-  },
-  {
-    "objectID": "experiments/index.html",
-    "href": "experiments/index.html",
-    "title": "Experiments",
-    "section": "",
-    "text": "Experiments\nExperimental records are indexed automatically from planning through completion.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Experiment\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nExperiment\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nexp-001\n\n\nFusion LOOCV Evaluation\n\n\nplanned\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "ideas/index.html",
-    "href": "ideas/index.html",
-    "title": "Ideas",
-    "section": "",
-    "text": "Research Ideas\nIdeas are indexed automatically from initial capture through evaluation and conversion.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Idea\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nIdea\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nidea-001\n\n\nAtmospheric Residual Spatial Diagnostics\n\n\ninbox\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ResearchOS",
-    "section": "",
-    "text": "Academic Research Operating System\n    ResearchOS\n    \n      A metadata-driven cockpit for research projects, manuscripts, experiments,\n      literature, datasets, methods, ideas, and daily research activity.\n    \n  \n  \n    Thursday\n    2026-09-03\n  \n\n\n\n\n  Projects\n  1\n  1 active / planning\n\n\n  Papers\n  1\n  1 in active pipeline\n\n\n  Experiments\n  1\n  0 ready / running / blocked\n\n\n  Literature\n  2\n  1 read / synthesized / cited\n\n\n\n\n\n  \n    \n      Today's Focus\n      No log for today; showing latest plan from 2026-08-07.\n    \n    Edit Latest Plan ↗\n  \n  \n    \n  \n  Upgrade ResearchOS dashboard\n\n\n  \n  Review Fusion LOOCV experiment\n\n\n  \n  Complete paper-001 experimental design\n\n\n  \n  Review Murray et al. 2019 notes\n\n\n  \n  Update project-001 progress\n\n  \n\n\n  \n    Upcoming / Blocked\n    Next 30 days\n  \n  No blocked items or deadlines within 30 days.\n\n\n\n\n\n  \n    Research Activity\n    1 active days · last 365 days\n  \n  \n    \n      \n    \n  \n  \n  Less\n  \n  \n  \n  \n  \n  More\n\n\n\n\n\n\n  \n    Paper Pipeline\n    1 total\n  \n  \n  idea\n  1\n  \n\n  analysis\n  0\n  \n\n  drafting\n  0\n  \n\n  internal-review\n  0\n  \n\n  submitted\n  0\n  \n\n  revision\n  0\n  \n\n  accepted\n  0\n  \n\n  published\n  0\n  \n\n  archived\n  0\n  \n\n\n\n  \n    Experiment Status\n    1 total\n  \n  \n  planned\n  1\n  \n\n  ready\n  0\n  \n\n  running\n  0\n  \n\n  blocked\n  0\n  \n\n  completed\n  0\n  \n\n  failed\n  0\n  \n\n  archived\n  0\n  \n\n\n\n  \n    Literature Reading\n    2 total\n  \n  \n  inbox\n  1\n  \n\n  reading\n  0\n  \n\n  read\n  1\n  \n\n  synthesized\n  0\n  \n\n  cited\n  0\n  \n\n  archived\n  0\n  \n\n\n\n\n\n\n  \n    Project Progress\n    Open →\n  \n  \n  \n    \n      PhD NRW InSAR Research\n      Next: Complete ResearchOS v0.2 dashboard deployment\n    \n    planning 10%\n  \n  \n\n\n\n  \n    Paper Progress\n    Open →\n  \n  \n  \n    \n      Atmospheric Correction and Validation for InSAR\n      Next: 搜寻创新点\n    \n    idea 10%\n  \n  \n\n\n\n  \n    Experiment Progress\n    Open →\n  \n  \n  \n    \n      Fusion LOOCV Evaluation\n      Next: 设计实验\n    \n    planned 10%\n  \n  \n\n\n\n\n\n\n  \n    Recently Updated\n    ResearchOS objects\n  \n  \n  \n    Mitigation of tropospheric turbulent delays in InSAR time series by incorporating a stochastic process\n    lit-002 · literature · updated 2026-08-07\n  \n  inbox\n\n\n  \n    Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico\n    lit-001 · literature · updated 2026-08-07\n  \n  read\n\n\n  \n    Fusion Atmospheric Correction\n    method-001 · method · updated 2026-08-07\n  \n  draft\n\n\n  \n    Sentinel-1 NRW Archive\n    dataset-001 · dataset · updated 2026-08-07\n  \n  available\n\n\n  \n    Fusion LOOCV Evaluation\n    exp-001 · experiment · updated 2026-08-07\n  \n  planned\n\n\n  \n    Atmospheric Residual Spatial Diagnostics\n    idea-001 · idea · updated 2026-08-07\n  \n  inbox\n\n\n  \n    Atmospheric Correction and Validation for InSAR\n    paper-001 · paper · updated 2026-08-07\n  \n  idea\n\n\n  \n    PhD NRW InSAR Research\n    project-001 · project · updated 2026-08-07\n  \n  planning\n\n\n\n\n\n  Dashboard generated 2026-09-03T12:21+08:00 · timezone Asia/Shanghai"
-  },
-  {
-    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html",
-    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html",
-    "title": "Atmospheric Residual Spatial Diagnostics",
-    "section": "",
-    "text": "What triggered this idea?"
-  },
-  {
-    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#data-availability",
-    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#data-availability",
-    "title": "Atmospheric Residual Spatial Diagnostics",
-    "section": "Data availability",
-    "text": "Data availability"
-  },
-  {
-    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#computational-requirements",
-    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#computational-requirements",
-    "title": "Atmospheric Residual Spatial Diagnostics",
-    "section": "Computational requirements",
-    "text": "Computational requirements"
-  },
-  {
-    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#time-requirements",
-    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#time-requirements",
-    "title": "Atmospheric Residual Spatial Diagnostics",
-    "section": "Time requirements",
-    "text": "Time requirements"
-  },
-  {
-    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#risks",
-    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#risks",
-    "title": "Atmospheric Residual Spatial Diagnostics",
-    "section": "Risks",
-    "text": "Risks"
+    "text": "Methods\nMethodological records are indexed automatically from ResearchOS.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Method\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nMethod\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nmethod-001\n\n\nFusion Atmospheric Correction\n\n\ndraft\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "experiments/exp-001-fusion-loocv/index.html#independent-variables",
@@ -329,116 +294,11 @@
     "text": "Tables"
   },
   {
-    "objectID": "knowledge/methods.html",
-    "href": "knowledge/methods.html",
-    "title": "Methods",
-    "section": "",
-    "text": "This section documents scientific methods and analytical approaches used or evaluated within ResearchOS.\nCurrent methodological areas may include:\n\n\nGeneral InSAR processing concepts, assumptions, limitations, and implementation notes.\n\n\n\nSmall Baseline Subset processing, time-series inversion, network design, referencing, quality control, and validation.\n\n\n\nDistributed Scatterer InSAR methods, PS/DS identification, local processing, and diagnostic analysis.\n\n\n\nTropospheric delay modelling, ERA5, GACOS, GNSS-supported atmospheric correction, residual modelling, and data fusion.\n\n\n\nGNSS processing, reference systems, LOS projection, geodetic validation, and integration with InSAR observations.\n\n\n\nStatistical validation, robust metrics, cross-validation, spatial statistics, uncertainty assessment, and experimental comparison.\nMethod notes are intended to connect scientific theory with reproducible research practice."
-  },
-  {
-    "objectID": "knowledge/methods.html#insar",
-    "href": "knowledge/methods.html#insar",
-    "title": "Methods",
-    "section": "",
-    "text": "General InSAR processing concepts, assumptions, limitations, and implementation notes."
-  },
-  {
-    "objectID": "knowledge/methods.html#sbas",
-    "href": "knowledge/methods.html#sbas",
-    "title": "Methods",
-    "section": "",
-    "text": "Small Baseline Subset processing, time-series inversion, network design, referencing, quality control, and validation."
-  },
-  {
-    "objectID": "knowledge/methods.html#ds-insar",
-    "href": "knowledge/methods.html#ds-insar",
-    "title": "Methods",
-    "section": "",
-    "text": "Distributed Scatterer InSAR methods, PS/DS identification, local processing, and diagnostic analysis."
-  },
-  {
-    "objectID": "knowledge/methods.html#atmospheric-correction",
-    "href": "knowledge/methods.html#atmospheric-correction",
-    "title": "Methods",
-    "section": "",
-    "text": "Tropospheric delay modelling, ERA5, GACOS, GNSS-supported atmospheric correction, residual modelling, and data fusion."
-  },
-  {
-    "objectID": "knowledge/methods.html#gnss",
-    "href": "knowledge/methods.html#gnss",
-    "title": "Methods",
-    "section": "",
-    "text": "GNSS processing, reference systems, LOS projection, geodetic validation, and integration with InSAR observations."
-  },
-  {
-    "objectID": "knowledge/methods.html#statistics",
-    "href": "knowledge/methods.html#statistics",
-    "title": "Methods",
-    "section": "",
-    "text": "Statistical validation, robust metrics, cross-validation, spatial statistics, uncertainty assessment, and experimental comparison.\nMethod notes are intended to connect scientific theory with reproducible research practice."
-  },
-  {
-    "objectID": "knowledge/experiments.html",
-    "href": "knowledge/experiments.html",
+    "objectID": "experiments/index.html",
+    "href": "experiments/index.html",
     "title": "Experiments",
     "section": "",
-    "text": "Experiments\nThis section contains selected experimental records from ResearchOS.\nEach experiment is documented using a reproducible structure that may include:\n\nobjective\nhypothesis\ninput datasets\ncomputational environment\nmethodology\nparameter configuration\nexperimental procedure\noutputs\nquantitative results\nvalidation\ninterpretation\nencountered problems\nreproducibility information\nproposed follow-up experiment\n\nExperiments normally progress through:\nPlanned → Running → Completed\nFailed experiments may also be retained when they provide useful methodological evidence or help document important research decisions.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Experiment\n      \n      \n        ID\n      \n      \n        Updated - Oldest\n      \n      \n        Updated - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nExperiment\nID\nStatus\nProject\nMethod\nDataset\nReproducible\nUpdated\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "knowledge/literature.html",
-    "href": "knowledge/literature.html",
-    "title": "Literature",
-    "section": "",
-    "text": "Literature\nThis section contains selected literature notes from the ResearchOS Vault.\nEach note may include:\n\nresearch question\nscientific background\ndatasets and study area\nmethodology\nexperimental design\nprincipal results\nmethodological or scientific innovation\nlimitations\nimportant figures and tables\nrelevance to current research\nrelated literature\n\nUse the search field or table headings to filter and explore the literature collection.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Year (Low to High)\n      \n      \n        Year (High to Low)\n      \n      \n        Paper\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nPaper\n\n\n\nAuthors\n\n\n\nYear\n\n\n\nJournal\n\n\n\nStatus\n\n\n\nTopics\n\n\n\n\n\n\n\n\nTest Paper\n\n\n \n\n\n \n\n\n \n\n\nfinished\n\n\nInSAR\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Research Projects\nResearch projects are indexed automatically from the project records below.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Project\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nProject\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nproject-001\n\n\nPhD NRW InSAR Research\n\n\nplanning\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "papers/index.html",
-    "href": "papers/index.html",
-    "title": "Papers",
-    "section": "",
-    "text": "Research Papers\nManuscripts are indexed automatically from idea development through publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Paper\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nPaper\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nTarget Journal\n\n\n\nUpdated\n\n\n\n\n\n\n\n\npaper-001\n\n\nAtmospheric Correction and Validation for InSAR\n\n\nidea\n\n\nmedium\n\n\n \n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "logs/index.html",
-    "href": "logs/index.html",
-    "title": "Research Log",
-    "section": "",
-    "text": "Research Log\nResearch logs are indexed automatically by date.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Research Log\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nResearch Log\n\n\n\nProjects\n\n\n\nPapers\n\n\n\n\n\n\n\n\nAug 7, 2026\n\n\n2026-08-07\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "datasets/index.html",
-    "href": "datasets/index.html",
-    "title": "Datasets",
-    "section": "",
-    "text": "Datasets\nDataset records are indexed automatically from ResearchOS metadata.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Dataset\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nDataset\n\n\n\nStatus\n\n\n\nUpdated\n\n\n\n\n\n\n\n\ndataset-001\n\n\nSentinel-1 NRW Archive\n\n\navailable\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "literature/index.html",
-    "href": "literature/index.html",
-    "title": "Literature",
-    "section": "",
-    "text": "Literature Library\nLiterature records are indexed automatically from structured ResearchOS reading notes.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Article\n      \n      \n        Year\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nArticle\n\n\n\nAuthors\n\n\n\nYear\n\n\n\nPublication\n\n\n\nReading Status\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nlit-002\n\n\nMitigation of tropospheric turbulent delays in InSAR time series by incorporating a stochastic process\n\n\n \n\n\n \n\n\n \n\n\ninbox\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nlit-001\n\n\nTropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico\n\n\nMurray, Kyle D.; Bekaert, David P. S.; Lohman, Rowena B.\n\n\n2019\n\n\nRemote Sensing of Environment\n\n\nread\n\n\nhigh\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "literature/lit-001-murray-2019/index.html#similarities",
-    "href": "literature/lit-001-murray-2019/index.html#similarities",
-    "title": "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico",
-    "section": "Similarities",
-    "text": "Similarities"
-  },
-  {
-    "objectID": "literature/lit-001-murray-2019/index.html#differences",
-    "href": "literature/lit-001-murray-2019/index.html#differences",
-    "title": "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico",
-    "section": "Differences",
-    "text": "Differences"
+    "text": "Experiments\nExperimental records are indexed automatically from planning through completion.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Experiment\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nExperiment\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nUpdated\n\n\n\n\n\n\n\n\nexp-001\n\n\nFusion LOOCV Evaluation\n\n\nplanned\n\n\nmedium\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "methods/method-001-fusion-atmospheric-correction/index.html#step-1",
@@ -460,5 +320,145 @@
     "title": "Fusion Atmospheric Correction",
     "section": "Step 3",
     "text": "Step 3"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "papers/index.html",
+    "href": "papers/index.html",
+    "title": "Papers",
+    "section": "",
+    "text": "Research Papers\nManuscripts are indexed automatically from idea development through publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Paper\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nPaper\n\n\n\nStatus\n\n\n\nPriority\n\n\n\nTarget Journal\n\n\n\nUpdated\n\n\n\n\n\n\n\n\npaper-001\n\n\nAtmospheric Correction and Validation for InSAR\n\n\nidea\n\n\nmedium\n\n\n \n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "",
+    "text": "What triggered this idea?"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#data-availability",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#data-availability",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Data availability",
+    "text": "Data availability"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#computational-requirements",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#computational-requirements",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Computational requirements",
+    "text": "Computational requirements"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#time-requirements",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#time-requirements",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Time requirements",
+    "text": "Time requirements"
+  },
+  {
+    "objectID": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#risks",
+    "href": "ideas/idea-001-atmospheric-residual-diagnostics/index.html#risks",
+    "title": "Atmospheric Residual Spatial Diagnostics",
+    "section": "Risks",
+    "text": "Risks"
+  },
+  {
+    "objectID": "datasets/index.html",
+    "href": "datasets/index.html",
+    "title": "Datasets",
+    "section": "",
+    "text": "Datasets\nDataset records are indexed automatically from ResearchOS metadata.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Dataset\n      \n      \n        Updated\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nID\n\n\n\nDataset\n\n\n\nStatus\n\n\n\nUpdated\n\n\n\n\n\n\n\n\ndataset-001\n\n\nSentinel-1 NRW Archive\n\n\navailable\n\n\n2026-08-07\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp1",
+    "href": "projects/project-001-phd-nrw-insar/index.html#wp1",
+    "title": "PhD NRW InSAR Research",
+    "section": "WP1",
+    "text": "WP1"
+  },
+  {
+    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp2",
+    "href": "projects/project-001-phd-nrw-insar/index.html#wp2",
+    "title": "PhD NRW InSAR Research",
+    "section": "WP2",
+    "text": "WP2"
+  },
+  {
+    "objectID": "projects/project-001-phd-nrw-insar/index.html#wp3",
+    "href": "projects/project-001-phd-nrw-insar/index.html#wp3",
+    "title": "PhD NRW InSAR Research",
+    "section": "WP3",
+    "text": "WP3"
+  },
+  {
+    "objectID": "knowledge/projects.html",
+    "href": "knowledge/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\nThis section contains selected research and publication projects managed through ResearchOS.\nProject notes typically document:\n\nobjective\nresearch question\nhypothesis\nresearch scope\ndatasets\nmethods\nexperiments\nmilestones\ncurrent status\nnext actions\nrisks\nrelated literature\nrelated ideas\nplanned outputs\n\nProjects are developed in the private Obsidian workspace and appear here only when explicitly released for publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Project\n      \n      \n        Start - Oldest\n      \n      \n        Start - Newest\n      \n      \n        Target - Oldest\n      \n      \n        Target - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nProject\nStatus\nPriority\nStart\nTarget\nTopics\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "knowledge/ideas.html",
+    "href": "knowledge/ideas.html",
+    "title": "Research Ideas",
+    "section": "",
+    "text": "Research Ideas\nThis section contains selected research ideas that have progressed beyond the initial private brainstorming stage.\nIdea notes may describe:\n\ncore scientific idea\nmotivation\nresearch question\npossible hypothesis\nsupporting evidence\nrequired datasets\npotential methodology\nproposed experiments\nrelated literature\npossible publication pathway\nnext action\n\nIdeas normally evolve through:\nInbox → Developing → Testing → Promoted\nEarly-stage or unpublished research ideas remain private unless explicitly approved for publication.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Idea\n      \n      \n        Updated - Oldest\n      \n      \n        Updated - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nIdea\nStatus\nProject\nPriority\nTopics\nUpdated\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "knowledge/index.html",
+    "href": "knowledge/index.html",
+    "title": "Research Knowledge Base",
+    "section": "",
+    "text": "This knowledge base contains selected public notes from the Academic ResearchOS.\nThe underlying research workspace is maintained locally in Obsidian. Only notes explicitly approved for publication are exported to this website.\n\n\n\n\nStructured notes on scientific literature, including research questions, datasets, methods, experiments, results, innovations, limitations, and relevance to ongoing research.\n\n\n\nResearch projects and publication projects, including objectives, research questions, methods, milestones, current status, and planned outputs.\n\n\n\nResearch ideas under development, including hypotheses, possible methods, required data, related literature, and potential experiments.\n\n\n\nMethodological notes covering InSAR, SBAS, DS-InSAR, atmospheric correction, GNSS, statistics, validation, and related analytical approaches.\n\n\n\nStructured experimental records documenting objectives, hypotheses, datasets, methods, parameters, results, validation, interpretation, and reproducibility.\n\n\n\nResearch outputs and manuscripts from initial concept through analysis, writing, submission, revision, acceptance, and publication.\n\n\n\n\n\nThe public knowledge base is generated through the following workflow:\nObsidian → Public-note selection → Quarto → Git → GitHub → GitHub Pages\nOnly selected material from the private ResearchOS Vault is included here."
+  },
+  {
+    "objectID": "knowledge/index.html#knowledge-areas",
+    "href": "knowledge/index.html#knowledge-areas",
+    "title": "Research Knowledge Base",
+    "section": "",
+    "text": "Structured notes on scientific literature, including research questions, datasets, methods, experiments, results, innovations, limitations, and relevance to ongoing research.\n\n\n\nResearch projects and publication projects, including objectives, research questions, methods, milestones, current status, and planned outputs.\n\n\n\nResearch ideas under development, including hypotheses, possible methods, required data, related literature, and potential experiments.\n\n\n\nMethodological notes covering InSAR, SBAS, DS-InSAR, atmospheric correction, GNSS, statistics, validation, and related analytical approaches.\n\n\n\nStructured experimental records documenting objectives, hypotheses, datasets, methods, parameters, results, validation, interpretation, and reproducibility.\n\n\n\nResearch outputs and manuscripts from initial concept through analysis, writing, submission, revision, acceptance, and publication."
+  },
+  {
+    "objectID": "knowledge/index.html#researchos-publishing-model",
+    "href": "knowledge/index.html#researchos-publishing-model",
+    "title": "Research Knowledge Base",
+    "section": "",
+    "text": "The public knowledge base is generated through the following workflow:\nObsidian → Public-note selection → Quarto → Git → GitHub → GitHub Pages\nOnly selected material from the private ResearchOS Vault is included here."
+  },
+  {
+    "objectID": "knowledge/publications.html",
+    "href": "knowledge/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications\nThis section tracks selected research outputs and manuscripts developed through ResearchOS.\nPublication records may document:\n\nworking title\nresearch question\nprincipal scientific contribution\ndatasets\nmethodology\nexperimental design\nkey results\nprincipal figures and tables\ntarget journal or conference\nmanuscript status\nreviewer comments\nrevision history\nnext action\n\nPublication development generally follows:\nIdea → Analysis → Writing → Internal Review → Submitted → Revision → Accepted → Published\nOnly publication records explicitly selected for public release are included on this website.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Publication\n      \n      \n        Target Date - Oldest\n      \n      \n        Target Date - Newest\n      \n      \n        Updated - Oldest\n      \n      \n        Updated - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nPublication\nStatus\nProject\nJournal / Venue\nTarget Date\nDOI\nUpdated\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "literature/lit-001-murray-2019/index.html#similarities",
+    "href": "literature/lit-001-murray-2019/index.html#similarities",
+    "title": "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico",
+    "section": "Similarities",
+    "text": "Similarities"
+  },
+  {
+    "objectID": "literature/lit-001-murray-2019/index.html#differences",
+    "href": "literature/lit-001-murray-2019/index.html#differences",
+    "title": "Tropospheric corrections for InSAR: Statistical assessments and applications to the Central United States and Mexico",
+    "section": "Differences",
+    "text": "Differences"
+  },
+  {
+    "objectID": "logs/2026/2026-08-07.html",
+    "href": "logs/2026/2026-08-07.html",
+    "title": "2026-08-07",
+    "section": "",
+    "text": "Completed\n\n\n\n\n\nIn Progress\n\nUpgrade ResearchOS dashboard\nReview Fusion LOOCV experiment\n\n\n\n\nProblems\n\n\n\n\n\nDecisions\n\n\n\n\n\nResults\n\n\n\n\n\nNew Ideas\n\n\n\n\n\nLiterature Read\n\n\n\n\n\nNext Actions\n\nComplete paper-001 experimental design\nReview Murray et al. 2019 notes\nUpdate project-001 progress\n\n\n\nNotes"
   }
 ]
