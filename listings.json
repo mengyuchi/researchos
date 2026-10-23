@@ -1,16 +1,14 @@
 [
   {
-    "listing": "/knowledge/publications.html",
+    "listing": "/knowledge/ideas.html",
     "items": []
   },
   {
-    "listing": "/knowledge/literature.html",
-    "items": [
-      "/knowledge/vault/02 Literature/Papers/Test Paper.html"
-    ]
+    "listing": "/knowledge/experiments.html",
+    "items": []
   },
   {
-    "listing": "/knowledge/ideas.html",
+    "listing": "/knowledge/projects.html",
     "items": []
   },
   {
@@ -21,9 +19,41 @@
     ]
   },
   {
+    "listing": "/papers/index.html",
+    "items": [
+      "/papers/paper-001-atmospheric-correction/index.html"
+    ]
+  },
+  {
     "listing": "/ideas/index.html",
     "items": [
       "/ideas/idea-001-atmospheric-residual-diagnostics/index.html"
+    ]
+  },
+  {
+    "listing": "/methods/index.html",
+    "items": [
+      "/methods/method-001-fusion-atmospheric-correction/index.html"
+    ]
+  },
+  {
+    "listing": "/knowledge/literature.html",
+    "items": [
+      "/knowledge/vault/02 Literature/Papers/Test Paper.html"
+    ]
+  },
+  {
+    "listing": "/knowledge/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/knowledge/methods.html",
+    "items": []
+  },
+  {
+    "listing": "/logs/index.html",
+    "items": [
+      "/logs/2026/2026-08-07.html"
     ]
   },
   {
@@ -39,39 +69,9 @@
     ]
   },
   {
-    "listing": "/methods/index.html",
-    "items": [
-      "/methods/method-001-fusion-atmospheric-correction/index.html"
-    ]
-  },
-  {
-    "listing": "/logs/index.html",
-    "items": [
-      "/logs/2026/2026-08-07.html"
-    ]
-  },
-  {
-    "listing": "/papers/index.html",
-    "items": [
-      "/papers/paper-001-atmospheric-correction/index.html"
-    ]
-  },
-  {
     "listing": "/datasets/index.html",
     "items": [
       "/datasets/dataset-001-sentinel1/index.html"
     ]
-  },
-  {
-    "listing": "/knowledge/projects.html",
-    "items": []
-  },
-  {
-    "listing": "/knowledge/experiments.html",
-    "items": []
-  },
-  {
-    "listing": "/knowledge/methods.html",
-    "items": []
   }
 ]
